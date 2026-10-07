@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Gallery page
+   ========================================================================== */
+
+.page-hero--gallery {
+  background-image: url('../../assets/images/misc/bg-mother-harvest.webp');
+}
+
+.gallery-intro {
+  padding: 80px 0 40px;
+  background-color: var(--color-white);
+}
+
+.gallery-intro__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min(var(--container-narrow), 100%);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.gallery-section {
+  padding: 40px 0 80px;
+  background-color: var(--color-white);
+}
+
+.gallery-section__filters {
+  margin-bottom: 40px;
+}
+
+.gallery-section__status {
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.gallery-section__status a {
+  color: var(--color-heading);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-grid__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.gallery-cta {
+  padding: 80px 0 120px;
+  background: var(--color-white) url('../../assets/images/misc/bg-faded-header.webp') center bottom / cover no-repeat;
+}
+
+.gallery-cta__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .gallery-intro {
+    padding: 60px 0 30px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

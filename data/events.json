@@ -1,0 +1,487 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "slug": "community-food-drive",
+      "title": "Community Food Drive",
+      "date": "2026-11-15",
+      "startTime": "2026-11-15T09:00:00",
+      "endTime": "2026-11-15T14:00:00",
+      "location": "Riverside Community Hall, Demo City",
+      "category": "Community",
+      "featured": true,
+      "registrationUrl": "contact.html#contact-form",
+      "excerpt": "Help us sort, pack and deliver pantry staples for families facing food insecurity this season.",
+      "image": {
+        "src": "assets/images/causes/family-sitting-together.webp",
+        "width": 1000,
+        "height": 667,
+        "alt": "A family sitting together on a bench outdoors"
+      },
+      "cover": {
+        "src": "assets/images/causes/family-sitting-together.webp",
+        "width": 1000,
+        "height": 667,
+        "alt": "Volunteers preparing food boxes at a community hall"
+      },
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Our Community Food Drive brings neighbours together to fill shelves for households who are stretching every meal. Volunteers check donations, pack balanced boxes and help load vehicles for partner shelters."
+        },
+        {
+          "type": "paragraph",
+          "text": "No experience is needed. Team leads will guide you through safe handling, labeling and delivery routes. Wear comfortable shoes and bring a reusable water bottle."
+        }
+      ],
+      "details": [
+        "Open to ages 14+ with a guardian present",
+        "Light breakfast and snacks provided for volunteers",
+        "Parking available behind the community hall",
+        "Registration helps us plan enough supplies and stations"
+      ],
+      "gallery": [
+        {
+          "src": "assets/images/about/women-community-group.webp",
+          "width": 900,
+          "height": 600,
+          "alt": "A group of women volunteering together outdoors"
+        },
+        {
+          "src": "assets/images/causes/woman-smiling-frame.webp",
+          "width": 900,
+          "height": 1200,
+          "alt": "A donor dropping off canned goods at the hall"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "spring-fundraiser-gala",
+      "title": "Spring Fundraiser Gala",
+      "date": "2026-12-05",
+      "startTime": "2026-12-05T18:30:00",
+      "endTime": "2026-12-05T21:30:00",
+      "location": "Harborview Event Center, Demo City",
+      "category": "Fundraising",
+      "featured": true,
+      "registrationUrl": "contact.html#contact-form",
+      "excerpt": "An evening of stories, music and giving to support clean water and education programmes.",
+      "image": {
+        "src": "assets/images/hero/hero-friends-reflection.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": "Friends smiling together near water at sunset"
+      },
+      "cover": {
+        "src": "assets/images/hero/hero-friends-reflection.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": "Guests gathered at a charity fundraiser evening"
+      },
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Join donors, volunteers and programme staff for our Spring Fundraiser Gala. The night includes a short programme highlighting field updates, a silent pledge moment and live acoustic music from local artists."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dress is smart casual. All ticket proceeds and on-site gifts support wells, classroom supplies and mobile health visits in partner communities."
+        }
+      ],
+      "details": [
+        "Doors open at 6:00 p.m.; programme begins at 6:30 p.m.",
+        "Vegetarian and gluten-free dinner options available",
+        "Free on-site childcare for ages 5\u201312 with advance notice",
+        "This is a demo event for the website theme only"
+      ],
+      "gallery": [
+        {
+          "src": "assets/images/about/girls-smiling-together.webp",
+          "width": 700,
+          "height": 700,
+          "alt": "Two smiling girls at a community gathering"
+        },
+        {
+          "src": "assets/images/hero/donation-hero-village.webp",
+          "width": 1200,
+          "height": 800,
+          "alt": "Guests arriving for the evening programme"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "volunteer-orientation-day",
+      "title": "Volunteer Orientation Day",
+      "date": "2026-11-22",
+      "startTime": "2026-11-22T10:00:00",
+      "endTime": "2026-11-22T12:30:00",
+      "location": "ONG Donation Demo Office, Demo City",
+      "category": "Volunteer",
+      "featured": false,
+      "registrationUrl": "contact.html#contact-form",
+      "excerpt": "Meet our team, learn safety basics and find a volunteer role that fits your schedule.",
+      "image": {
+        "src": "assets/images/about/woman-with-laptop.webp",
+        "width": 800,
+        "height": 1000,
+        "alt": "A woman working on a laptop at a community desk"
+      },
+      "cover": {
+        "src": "assets/images/about/woman-with-laptop.webp",
+        "width": 800,
+        "height": 1000,
+        "alt": "Staff welcoming new volunteers at an orientation session"
+      },
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Volunteer Orientation Day is the first step for anyone who wants to support our relief and development work locally. You will hear how we coordinate with partners, what a typical shift looks like and how we keep everyone safe."
+        },
+        {
+          "type": "paragraph",
+          "text": "After the briefing you can sign up for upcoming drives, mentoring circles or administrative support teams that match your skills."
+        }
+      ],
+      "details": [
+        "Please arrive 10 minutes early to check in",
+        "Photo ID required for facility access",
+        "Orientation materials provided in print and digital form",
+        "ASL interpretation available on request"
+      ],
+      "gallery": [
+        {
+          "src": "assets/images/blog/cover-be-the-change.webp",
+          "width": 1600,
+          "height": 900,
+          "alt": "Volunteers reviewing the day\u2019s schedule on a wall board"
+        },
+        {
+          "src": "assets/images/about/girl-with-paper.webp",
+          "width": 900,
+          "height": 1200,
+          "alt": "A new volunteer filling out a welcome form"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "neighborhood-health-screening",
+      "title": "Neighborhood Health Screening",
+      "date": "2027-01-18",
+      "startTime": "2027-01-18T08:00:00",
+      "endTime": "2027-01-18T16:00:00",
+      "location": "Southside Wellness Clinic, Demo City",
+      "category": "Community",
+      "featured": false,
+      "registrationUrl": "contact.html#contact-form",
+      "excerpt": "Free basic screenings and health education hosted with local nurses and community partners.",
+      "image": {
+        "src": "assets/images/about/mother-holding-child.webp",
+        "width": 900,
+        "height": 1200,
+        "alt": "A mother holding her child in a clinic waiting area"
+      },
+      "cover": {
+        "src": "assets/images/about/mother-holding-child.webp",
+        "width": 900,
+        "height": 1200,
+        "alt": "Families visiting a community health screening station"
+      },
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Our Neighborhood Health Screening connects families with volunteer nurses for blood pressure checks, growth monitoring for children and referrals to longer-term care when needed."
+        },
+        {
+          "type": "paragraph",
+          "text": "This event is educational and supportive. It does not replace emergency care or a relationship with a primary doctor."
+        }
+      ],
+      "details": [
+        "Walk-ins welcome; appointments reduce wait times",
+        "Interpreters available for Spanish and French",
+        "Children welcome with a parent or guardian",
+        "Demo event content for illustration purposes"
+      ],
+      "gallery": [
+        {
+          "src": "assets/images/about/mother-washing-child.webp",
+          "width": 900,
+          "height": 1200,
+          "alt": "A caregiver helping a child wash hands at a basin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "youth-mentorship-kickoff",
+      "title": "Youth Mentorship Kickoff",
+      "date": "2027-02-08",
+      "startTime": "2027-02-08T15:00:00",
+      "endTime": "2027-02-08T17:00:00",
+      "location": "Lakeside Learning Hub, Demo City",
+      "category": "Volunteer",
+      "featured": false,
+      "registrationUrl": "contact.html#contact-form",
+      "excerpt": "Launch day for our after-school mentorship circles: tutoring, crafts and confidence-building activities.",
+      "image": {
+        "src": "assets/images/hero/hero-boy-smiling.webp",
+        "width": 1000,
+        "height": 667,
+        "alt": "A smiling boy outdoors in warm light"
+      },
+      "cover": {
+        "src": "assets/images/hero/hero-boy-smiling.webp",
+        "width": 1000,
+        "height": 667,
+        "alt": "Students and mentors meeting at a learning hub"
+      },
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Youth Mentorship Kickoff welcomes new mentors and students into a semester of weekly meetups focused on homework help, creative projects and life skills conversations."
+        },
+        {
+          "type": "paragraph",
+          "text": "Families can tour the space, meet lead mentors and choose a circle that fits their schedule. Background checks are required for all adult mentors."
+        }
+      ],
+      "details": [
+        "Snack provided for participating youth",
+        "Mentor applications accepted on site",
+        "Accessible entrance on the north side of the building",
+        "Demo programme names and locations only"
+      ],
+      "gallery": [
+        {
+          "src": "assets/images/about/girl-with-paper.webp",
+          "width": 900,
+          "height": 1200,
+          "alt": "Students picking up mentorship folders"
+        },
+        {
+          "src": "assets/images/about/girl-red-hoodie.webp",
+          "width": 900,
+          "height": 1200,
+          "alt": "Youth participants meeting their mentors"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "winter-relief-packing-party",
+      "title": "Winter Relief Packing Party",
+      "date": "2027-03-14",
+      "startTime": "2027-03-14T11:00:00",
+      "endTime": "2027-03-14T16:00:00",
+      "location": "North Warehouse Annex, Demo City",
+      "category": "Fundraising",
+      "featured": false,
+      "registrationUrl": "donate.html",
+      "excerpt": "Pack warm kits and hygiene supplies while donors match every box completed during the shift.",
+      "image": {
+        "src": "assets/images/causes/mother-newborn-village.webp",
+        "width": 1000,
+        "height": 667,
+        "alt": "A mother carrying supplies through a village path"
+      },
+      "cover": {
+        "src": "assets/images/causes/mother-newborn-village.webp",
+        "width": 1000,
+        "height": 667,
+        "alt": "Volunteers assembling winter relief kits in a warehouse"
+      },
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Our Winter Relief Packing Party turns donations into ready-to-ship kits with blankets, soap, socks and notes of encouragement. Corporate partners have pledged to match each kit packed during the event."
+        },
+        {
+          "type": "paragraph",
+          "text": "Bring friends or colleagues for a team shift. We will provide gloves, stations and quality checks before pallets are sealed for partner distribution."
+        }
+      ],
+      "details": [
+        "Closed-toe shoes required in the warehouse",
+        "Shifts available in two-hour blocks",
+        "Corporate teams may reserve a table in advance",
+        "Online giving welcome at donate.html"
+      ],
+      "gallery": [
+        {
+          "src": "assets/images/about/mother-carrying-load.webp",
+          "width": 800,
+          "height": 1200,
+          "alt": "A woman carrying supplies along a rural path"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "back-to-school-supply-drive",
+      "title": "Back-to-School Supply Drive",
+      "date": "2027-04-10",
+      "startTime": "2027-04-10T10:00:00",
+      "endTime": "2027-04-10T15:00:00",
+      "location": "Eastside Learning Center, Demo City",
+      "category": "Community",
+      "featured": false,
+      "registrationUrl": "contact.html#contact-form",
+      "excerpt": "Collect backpacks, notebooks and hygiene kits so students can start the term ready to learn.",
+      "image": {
+        "src": "assets/images/about/girl-with-paper.webp",
+        "width": 900,
+        "height": 1200,
+        "alt": "A student holding school papers and smiling"
+      },
+      "cover": {
+        "src": "assets/images/blog/cover-together-we-can.webp",
+        "width": 1600,
+        "height": 900,
+        "alt": "Volunteers sorting school supplies on tables"
+      },
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Our Back-to-School Supply Drive is a hands-on way to support families who are preparing for a new academic year. Volunteers sort donated items, assemble grade-level kits and help distribute them to partner schools."
+        },
+        {
+          "type": "paragraph",
+          "text": "Bring unopened notebooks, pencils, rulers or backpacks if you can. Every contribution stays in the local demo programme featured on this website."
+        }
+      ],
+      "details": [
+        "Family-friendly volunteer shifts",
+        "Drop-off lane open from 9:30 a.m.",
+        "Demo schools and names for illustration only",
+        "Register so we can plan enough tables"
+      ],
+      "gallery": [
+        {
+          "src": "assets/images/about/girl-smiling-portrait.webp",
+          "width": 900,
+          "height": 1200,
+          "alt": "A smiling student receiving a new backpack"
+        },
+        {
+          "src": "assets/images/about/girl-water-bottle.webp",
+          "width": 900,
+          "height": 1200,
+          "alt": "Supplies table with water bottles and lunch kits"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "charity-walk-for-hope",
+      "title": "Charity Walk for Hope",
+      "date": "2027-05-02",
+      "startTime": "2027-05-02T07:30:00",
+      "endTime": "2027-05-02T11:00:00",
+      "location": "Lakeside Promenade, Demo City",
+      "category": "Fundraising",
+      "featured": false,
+      "registrationUrl": "donate.html",
+      "excerpt": "A friendly 5K walk along the waterfront to raise demo funds for clean water and classroom supplies.",
+      "image": {
+        "src": "assets/images/about/girl-arms-raised.webp",
+        "width": 900,
+        "height": 1200,
+        "alt": "A walker celebrating at the finish area"
+      },
+      "cover": {
+        "src": "assets/images/hero/donation-hero-village.webp",
+        "width": 1200,
+        "height": 800,
+        "alt": "Walkers gathered at the starting line"
+      },
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Charity Walk for Hope is a relaxed community route suitable for families, student groups and workplace teams. Participants receive a demo bib, refreshments and a short programme about the programmes their steps support."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can walk, jog or cheer from the sidelines. Pledge gifts are optional and processed through our standard donate page\u2014no live payment processing is connected on this theme."
+        }
+      ],
+      "details": [
+        "Stroller-friendly course",
+        "Water stations every mile",
+        "Rain date published one week prior",
+        "Demo route markers only"
+      ],
+      "gallery": [
+        {
+          "src": "assets/images/about/women-colorful-dresses.webp",
+          "width": 1200,
+          "height": 800,
+          "alt": "A colourful group of walkers crossing the promenade"
+        },
+        {
+          "src": "assets/images/blog/cover-your-help-matters.webp",
+          "width": 1600,
+          "height": 900,
+          "alt": "Thank-you banner at the walk finish line"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "family-wellness-fair",
+      "title": "Family Wellness Fair",
+      "date": "2027-06-20",
+      "startTime": "2027-06-20T11:00:00",
+      "endTime": "2027-06-20T17:00:00",
+      "location": "Central Park Pavilion, Demo City",
+      "category": "Community",
+      "featured": false,
+      "registrationUrl": "contact.html#contact-form",
+      "excerpt": "Free activities, nutrition demos and resource tables for parents, caregivers and kids.",
+      "image": {
+        "src": "assets/images/about/mother-baby-banana-grove.webp",
+        "width": 700,
+        "height": 700,
+        "alt": "A mother and baby enjoying time outdoors"
+      },
+      "cover": {
+        "src": "assets/images/causes/mother-child-park.webp",
+        "width": 1000,
+        "height": 667,
+        "alt": "Families visiting booths at an outdoor wellness fair"
+      },
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The Family Wellness Fair connects neighbours with demo partners offering basic health screenings, parenting workshops and play areas for children. It is designed as a welcoming entry point to longer-term support."
+        },
+        {
+          "type": "paragraph",
+          "text": "All activities are educational samples for this website theme. They do not replace licensed medical care or emergency services."
+        }
+      ],
+      "details": [
+        "Picnic area with shaded seating",
+        "ASL interpretation on the main stage",
+        "First-aid tent staffed by certified volunteers",
+        "Demo partner booths rotate hourly"
+      ],
+      "gallery": [
+        {
+          "src": "assets/images/about/boy-drinking-water.webp",
+          "width": 900,
+          "height": 1200,
+          "alt": "A child refilling a bottle at a hydration station"
+        },
+        {
+          "src": "assets/images/about/mother-holding-child.webp",
+          "width": 900,
+          "height": 1200,
+          "alt": "A parent visiting a family resource table"
+        }
+      ]
+    }
+  ]
+}

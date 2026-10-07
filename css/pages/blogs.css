@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Blog listing page
+   ========================================================================== */
+
+/* ---------- Hero ---------- */
+.page-hero--blog {
+  background-image: url('../../assets/images/misc/bg-hands-holding-heart.webp');
+}
+
+/* ---------- Posts ---------- */
+.blog-listing {
+  padding: 60px 0 120px;
+  background: var(--color-white) url('../../assets/images/misc/bg-faded-header.webp') center bottom / cover no-repeat;
+}
+
+.blog-listing__status {
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.blog-listing__status a {
+  color: var(--color-heading);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.blog-listing__status a:hover {
+  color: var(--color-primary);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.blog-grid:focus {
+  outline: 0;
+}
+
+.blog-grid__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.blog-grid__empty a {
+  text-decoration: underline;
+}
+
+.blog-listing__pagination:not(:empty) {
+  margin-top: 60px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-grid .blog-card {
+    min-height: 400px;
+    padding: 40px;
+  }
+}

@@ -1,0 +1,580 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Clean Water Celebration",
+      "category": "Community",
+      "alt": "A boy drinking from a newly installed water tap",
+      "image": {
+        "src": "assets/images/about/boy-drinking-water.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/boy-drinking-water.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 2,
+      "title": "Learning Together",
+      "category": "Volunteers",
+      "alt": "A girl smiling while holding school papers",
+      "image": {
+        "src": "assets/images/about/girl-with-paper.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/girl-with-paper.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 3,
+      "title": "Field Visit",
+      "category": "Events",
+      "alt": "Women in colourful dresses walking together as a group",
+      "image": {
+        "src": "assets/images/about/women-colorful-dresses.webp",
+        "width": 1200,
+        "height": 800
+      },
+      "thumbnail": {
+        "src": "assets/images/about/women-colorful-dresses.webp",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "id": 4,
+      "title": "Mentor Session",
+      "category": "Volunteers",
+      "alt": "A woman working with a laptop at a community desk",
+      "image": {
+        "src": "assets/images/about/woman-with-laptop.webp",
+        "width": 800,
+        "height": 1000
+      },
+      "thumbnail": {
+        "src": "assets/images/about/woman-with-laptop.webp",
+        "width": 800,
+        "height": 1000
+      }
+    },
+    {
+      "id": 5,
+      "title": "Fresh Water Access",
+      "category": "Fundraising",
+      "alt": "A girl drinking clean water from a tap outdoors",
+      "image": {
+        "src": "assets/images/causes/girl-drinking-tap-water.webp",
+        "width": 1000,
+        "height": 667
+      },
+      "thumbnail": {
+        "src": "assets/images/causes/girl-drinking-tap-water.webp",
+        "width": 1000,
+        "height": 667
+      }
+    },
+    {
+      "id": 6,
+      "title": "Joy in the Park",
+      "category": "Community",
+      "alt": "A mother and child sitting together in a park",
+      "image": {
+        "src": "assets/images/causes/mother-child-park.webp",
+        "width": 1000,
+        "height": 667
+      },
+      "thumbnail": {
+        "src": "assets/images/causes/mother-child-park.webp",
+        "width": 1000,
+        "height": 667
+      }
+    },
+    {
+      "id": 7,
+      "title": "Evening Gathering",
+      "category": "Events",
+      "alt": "Friends smiling together near water at sunset",
+      "image": {
+        "src": "assets/images/hero/hero-friends-reflection.webp",
+        "width": 1200,
+        "height": 800
+      },
+      "thumbnail": {
+        "src": "assets/images/hero/hero-friends-reflection.webp",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "id": 8,
+      "title": "New Beginnings",
+      "category": "Community",
+      "alt": "A mother holding her newborn in a clinic setting",
+      "image": {
+        "src": "assets/images/blog/mother-holding-newborn.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/blog/mother-holding-newborn.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 9,
+      "title": "Play and Hope",
+      "category": "Volunteers",
+      "alt": "A child playing in sand with a bright toy",
+      "image": {
+        "src": "assets/images/blog/child-playing-sand.webp",
+        "width": 1000,
+        "height": 667
+      },
+      "thumbnail": {
+        "src": "assets/images/blog/child-playing-sand.webp",
+        "width": 1000,
+        "height": 667
+      }
+    },
+    {
+      "id": 10,
+      "title": "Community Circle",
+      "category": "Events",
+      "alt": "A group of women volunteering together outdoors",
+      "image": {
+        "src": "assets/images/about/women-community-group.webp",
+        "width": 900,
+        "height": 600
+      },
+      "thumbnail": {
+        "src": "assets/images/about/women-community-group.webp",
+        "width": 900,
+        "height": 600
+      }
+    },
+    {
+      "id": 11,
+      "title": "Shared Smiles",
+      "category": "Fundraising",
+      "alt": "Two girls smiling together, one in a red headscarf",
+      "image": {
+        "src": "assets/images/about/girls-smiling-together.webp",
+        "width": 700,
+        "height": 700
+      },
+      "thumbnail": {
+        "src": "assets/images/about/girls-smiling-together.webp",
+        "width": 700,
+        "height": 700
+      }
+    },
+    {
+      "id": 12,
+      "title": "Hands of Support",
+      "category": "Fundraising",
+      "alt": "Hands holding a heart shape against a warm background",
+      "image": {
+        "src": "assets/images/misc/bg-hands-holding-heart.webp",
+        "width": 1920,
+        "height": 1080
+      },
+      "thumbnail": {
+        "src": "assets/images/misc/bg-hands-holding-heart.webp",
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    {
+      "id": 13,
+      "title": "Quiet Strength",
+      "category": "Community",
+      "alt": "An elder woman smiling in a portrait",
+      "image": {
+        "src": "assets/images/about/elder-woman-portrait.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/elder-woman-portrait.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 14,
+      "title": "Celebrating Progress",
+      "category": "Events",
+      "alt": "A girl raising her arms with joy outdoors",
+      "image": {
+        "src": "assets/images/about/girl-arms-raised.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/girl-arms-raised.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 15,
+      "title": "Safe to Smile",
+      "category": "Community",
+      "alt": "A young girl covering her mouth while laughing",
+      "image": {
+        "src": "assets/images/about/child-covering-mouth.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/child-covering-mouth.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 16,
+      "title": "Study Circle",
+      "category": "Volunteers",
+      "alt": "A student reviewing notes with a mentor nearby",
+      "image": {
+        "src": "assets/images/about/girl-hands-to-face.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/girl-hands-to-face.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 17,
+      "title": "Warm Welcome",
+      "category": "Volunteers",
+      "alt": "A girl in a red hoodie smiling at the camera",
+      "image": {
+        "src": "assets/images/about/girl-red-hoodie.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/girl-red-hoodie.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 18,
+      "title": "Portrait of Hope",
+      "category": "Community",
+      "alt": "Close-up portrait of a smiling girl",
+      "image": {
+        "src": "assets/images/about/girl-smiling-portrait.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/girl-smiling-portrait.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 19,
+      "title": "Hydration Station",
+      "category": "Events",
+      "alt": "A girl holding a reusable water bottle at an outreach table",
+      "image": {
+        "src": "assets/images/about/girl-water-bottle.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/girl-water-bottle.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 20,
+      "title": "Harvest Morning",
+      "category": "Community",
+      "alt": "A mother carrying her baby through a banana grove",
+      "image": {
+        "src": "assets/images/about/mother-baby-banana-grove.webp",
+        "width": 700,
+        "height": 700
+      },
+      "thumbnail": {
+        "src": "assets/images/about/mother-baby-banana-grove.webp",
+        "width": 700,
+        "height": 700
+      }
+    },
+    {
+      "id": 21,
+      "title": "Carried With Care",
+      "category": "Community",
+      "alt": "A mother carrying her baby on her back in a colourful wrap",
+      "image": {
+        "src": "assets/images/about/mother-baby-on-back.webp",
+        "width": 900,
+        "height": 1350
+      },
+      "thumbnail": {
+        "src": "assets/images/about/mother-baby-on-back.webp",
+        "width": 900,
+        "height": 1350
+      }
+    },
+    {
+      "id": 22,
+      "title": "Clinic Visit",
+      "category": "Fundraising",
+      "alt": "A mother holding her child in a waiting area",
+      "image": {
+        "src": "assets/images/about/mother-holding-child.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/mother-holding-child.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 23,
+      "title": "Hand Washing Lesson",
+      "category": "Volunteers",
+      "alt": "A caregiver helping a child wash hands",
+      "image": {
+        "src": "assets/images/about/mother-washing-child.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/mother-washing-child.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 24,
+      "title": "Community Leader",
+      "category": "Events",
+      "alt": "A woman in a bright red headwrap smiling",
+      "image": {
+        "src": "assets/images/about/woman-red-headwrap.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/about/woman-red-headwrap.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 25,
+      "title": "Village Arrival",
+      "category": "Fundraising",
+      "alt": "A mother walking with her newborn through a village path",
+      "image": {
+        "src": "assets/images/causes/mother-newborn-village.webp",
+        "width": 1000,
+        "height": 667
+      },
+      "thumbnail": {
+        "src": "assets/images/causes/mother-newborn-village.webp",
+        "width": 1000,
+        "height": 667
+      }
+    },
+    {
+      "id": 26,
+      "title": "Framed Joy",
+      "category": "Fundraising",
+      "alt": "A woman smiling while holding a picture frame",
+      "image": {
+        "src": "assets/images/causes/woman-smiling-frame.webp",
+        "width": 900,
+        "height": 1200
+      },
+      "thumbnail": {
+        "src": "assets/images/causes/woman-smiling-frame.webp",
+        "width": 900,
+        "height": 1200
+      }
+    },
+    {
+      "id": 27,
+      "title": "Walk for Water",
+      "category": "Events",
+      "alt": "Supporters gathering before a charity walk",
+      "image": {
+        "src": "assets/images/hero/donation-hero-village.webp",
+        "width": 1200,
+        "height": 800
+      },
+      "thumbnail": {
+        "src": "assets/images/hero/donation-hero-village.webp",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "id": 28,
+      "title": "Heart for Service",
+      "category": "Volunteers",
+      "alt": "Hands shaped like a heart during a volunteer briefing",
+      "image": {
+        "src": "assets/images/hero/about-hero-heart-hands.webp",
+        "width": 1200,
+        "height": 800
+      },
+      "thumbnail": {
+        "src": "assets/images/hero/about-hero-heart-hands.webp",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "id": 29,
+      "title": "Make an Impact",
+      "category": "Fundraising",
+      "alt": "Blog cover art showing community outreach",
+      "image": {
+        "src": "assets/images/blog/cover-make-an-impact.webp",
+        "width": 1600,
+        "height": 900
+      },
+      "thumbnail": {
+        "src": "assets/images/blog/cover-make-an-impact.webp",
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "id": 30,
+      "title": "Join the Cause",
+      "category": "Events",
+      "alt": "Volunteers promoting an upcoming community day",
+      "image": {
+        "src": "assets/images/blog/cover-join-the-cause.webp",
+        "width": 1600,
+        "height": 900
+      },
+      "thumbnail": {
+        "src": "assets/images/blog/cover-join-the-cause.webp",
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "id": 31,
+      "title": "Together We Can",
+      "category": "Community",
+      "alt": "Families invited to a neighbourhood listening session",
+      "image": {
+        "src": "assets/images/blog/cover-together-we-can.webp",
+        "width": 1600,
+        "height": 900
+      },
+      "thumbnail": {
+        "src": "assets/images/blog/cover-together-we-can.webp",
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "id": 32,
+      "title": "Your Help Matters",
+      "category": "Fundraising",
+      "alt": "Donor thank-you gathering at a demo fundraiser",
+      "image": {
+        "src": "assets/images/blog/cover-your-help-matters.webp",
+        "width": 1600,
+        "height": 900
+      },
+      "thumbnail": {
+        "src": "assets/images/blog/cover-your-help-matters.webp",
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "id": 33,
+      "title": "Be the Change",
+      "category": "Volunteers",
+      "alt": "Orientation session for new volunteers",
+      "image": {
+        "src": "assets/images/blog/cover-be-the-change.webp",
+        "width": 1600,
+        "height": 900
+      },
+      "thumbnail": {
+        "src": "assets/images/blog/cover-be-the-change.webp",
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "id": 34,
+      "title": "Sarah's Story",
+      "category": "Community",
+      "alt": "Demo testimonial portrait of a programme supporter",
+      "image": {
+        "src": "assets/images/testimonials/testimonial-sarah-johnson.webp",
+        "width": 400,
+        "height": 400
+      },
+      "thumbnail": {
+        "src": "assets/images/testimonials/testimonial-sarah-johnson.webp",
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "id": 35,
+      "title": "Michael's Story",
+      "category": "Volunteers",
+      "alt": "Demo testimonial portrait of a long-time volunteer",
+      "image": {
+        "src": "assets/images/testimonials/testimonial-michael-stevens.webp",
+        "width": 400,
+        "height": 400
+      },
+      "thumbnail": {
+        "src": "assets/images/testimonials/testimonial-michael-stevens.webp",
+        "width": 400,
+        "height": 400
+      }
+    },
+    {
+      "id": 36,
+      "title": "Jessica's Story",
+      "category": "Fundraising",
+      "alt": "Demo testimonial portrait of a monthly donor",
+      "image": {
+        "src": "assets/images/testimonials/testimonial-jessica-rodriguez.webp",
+        "width": 400,
+        "height": 400
+      },
+      "thumbnail": {
+        "src": "assets/images/testimonials/testimonial-jessica-rodriguez.webp",
+        "width": 400,
+        "height": 400
+      }
+    }
+  ]
+}

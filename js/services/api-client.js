@@ -4,6 +4,8 @@ import { config } from '../config.js';
 const LOCAL_RESOURCES = {
   posts: 'blogs.json',
   causes: 'causes.json',
+  events: 'events.json',
+  gallery: 'gallery.json',
 };
 
 const cache = new Map();
@@ -34,9 +36,13 @@ export const apiClient = {
         return response.json();
       });
       cache.set(url, request);
-      request.catch(() => cache.delete(url));
     }
-    return cache.get(url);
+    try {
+      return await cache.get(url);
+    } catch (error) {
+      cache.delete(url);
+      throw error;
+    }
   },
 
   async post(resource, body) {

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Details – ONG Donation | Community Event</title>
+  <meta name="description" content="Event details, schedule and registration information for ONG Donation community gatherings and fundraisers.">
+  <link rel="canonical" href="https://www.example.org/event-single.html">
+  <meta name="theme-color" content="#f24a29">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ONG Donation">
+  <meta property="og:title" content="Event Details – ONG Donation">
+  <meta property="og:description" content="Join our next community event and meet the ONG Donation team.">
+  <meta property="og:url" content="https://www.example.org/event-single.html">
+  <meta property="og:image" content="https://www.example.org/assets/images/misc/bg-hands-holding-heart.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/jost-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/event-single.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/pages/event-single.js"></script>
+</head>
+<body class="page-event-single">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ SITE HEADER ============ -->
+  <header class="site-header" data-header>
+    <div class="topbar">
+      <ul class="inline-list inline-list--dots topbar__links">
+        <li><a href="#">Conditions</a></li>
+        <li><a href="#">Quality</a></li>
+        <li><a href="contact.html">Stay Connected</a></li>
+      </ul>
+      <ul class="inline-list inline-list--dots topbar__social">
+        <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar">
+      <a class="navbar__brand" href="index.html" aria-label="ONG Donation – home">
+        <img src="assets/images/logo/logo-white.png" alt="ONG Donation – Charity" width="180" height="30">
+      </a>
+
+      <div class="navbar__menu">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+          <span class="visually-hidden" data-nav-toggle-label>Open menu</span>
+          <svg class="icon nav-toggle__open" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-menu"></use></svg>
+          <svg class="icon nav-toggle__close" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-close"></use></svg>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary" data-nav>
+          <ul class="primary-nav__list">
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="index.html">Home</a>
+            </li>
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="about.html">About</a>
+            </li>
+            <li class="primary-nav__item has-dropdown" data-dropdown>
+              <a class="primary-nav__link" href="events.html" aria-current="true">Events</a>
+              <button class="primary-nav__caret" type="button" aria-expanded="false" aria-controls="submenu-events" data-dropdown-toggle>
+                <span class="visually-hidden">Show Events submenu</span>
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+              </button>
+              <ul class="dropdown" id="submenu-events">
+                <li><a class="dropdown__link" href="events.html">All Events</a></li>
+                <li><a class="dropdown__link" href="event-single.html" aria-current="page">Event Details</a></li>
+              </ul>
+            </li>
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="primary-nav__item has-dropdown" data-dropdown>
+              <a class="primary-nav__link" href="blogs.html" aria-current="true">Blogs</a>
+              <button class="primary-nav__caret" type="button" aria-expanded="false" aria-controls="submenu-blogs" data-dropdown-toggle>
+                <span class="visually-hidden">Show Blogs submenu</span>
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+              </button>
+              <ul class="dropdown" id="submenu-blogs">
+                <li><a class="dropdown__link" href="blogs.html">All Blogs</a></li>
+                <li><a class="dropdown__link" href="blog-single.html" aria-current="page">Blog Details</a></li>
+              </ul>
+            </li>
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <a class="navbar__contact contact-chip" href="tel:+1023358736">
+        <svg class="icon contact-chip__icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-phone"></use></svg>
+        <span class="contact-chip__text">
+          <span class="contact-chip__label">Call Us</span>
+          <span class="contact-chip__value">+ 10 23358736</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero page-hero--event section--inset" aria-labelledby="page-title" data-event-hero>
+      <div class="container page-hero__inner" data-reveal="fade-up" data-reveal-delay="200">
+        <h1 class="page-hero__title" id="page-title" data-event-title>Event Details</h1>
+        <p class="page-hero__subtitle" data-event-category>Gather, Give and Grow Together</p>
+      </div>
+      <img class="page-hero__edge" src="assets/images/misc/torn-edge-white.webp" alt="" width="1920" height="101">
+    </section>
+
+    <!-- ============ EVENT ============ -->
+    <div class="event-layout">
+      <div class="container event-layout__grid">
+        <article class="event" aria-labelledby="page-title" data-event data-reveal="fade" data-reveal-delay="200">
+          <p class="data-placeholder">Loading event…</p>
+        </article>
+        <aside class="event-aside" aria-label="Event information" data-event-aside data-reveal="fade" data-reveal-delay="400">
+          <p class="data-placeholder">Loading details…</p>
+        </aside>
+      </div>
+    </div>
+
+    <section class="related-events" data-related-events hidden aria-labelledby="related-events-title">
+      <h2 class="visually-hidden" id="related-events-title">Related events</h2>
+    </section>
+
+  </main>
+
+  <!-- ============ SITE FOOTER ============ -->
+  <footer class="site-footer section--inset">
+    <img class="site-footer__edge" src="assets/images/misc/torn-edge-dark.webp" alt="" width="1920" height="116" loading="lazy">
+    <div class="container">
+      <div class="site-footer__top">
+        <div class="site-footer__intro" data-reveal="fade-right" data-reveal-delay="200">
+          <h2 class="site-footer__title">Hope in Action</h2>
+          <p class="site-footer__subtitle">Together, we can rebuild lives and restore dignity.</p>
+        </div>
+        <form class="newsletter" data-newsletter novalidate data-reveal="fade-right" data-reveal-delay="400">
+          <label class="visually-hidden" for="newsletter-email">Email address</label>
+          <input class="newsletter__input" id="newsletter-email" type="email" name="email" placeholder="Email" autocomplete="email" required>
+          <button class="btn btn--secondary newsletter__submit" type="submit">Send</button>
+          <p class="newsletter__status" data-newsletter-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="site-footer__columns">
+        <div class="footer-col" data-reveal="fade-right" data-reveal-delay="200">
+          <h3 class="footer-col__title">Our Mission :</h3>
+          <p class="footer-col__text">We provide immediate and long-term support to war refugees, offering essential resources like food, water, medical care, and shelter.</p>
+          <a class="contact-chip contact-chip--footer" href="tel:+123358736">
+            <span class="contact-chip__badge">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-phone"></use></svg>
+            </span>
+            <span class="contact-chip__text">
+              <span class="contact-chip__label">Call Us</span>
+              <span class="contact-chip__value">+ 1 233 587 36</span>
+            </span>
+          </a>
+        </div>
+
+        <nav class="footer-col" aria-labelledby="footer-info-title" data-reveal="fade-right" data-reveal-delay="400">
+          <h3 class="footer-col__title" id="footer-info-title">Info :</h3>
+          <ul class="link-list link-list--secondary">
+            <li><a href="about.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Emergency Aid</a></li>
+            <li><a href="about.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Medical Assistance</a></li>
+            <li><a href="about.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Psychosocial Support</a></li>
+            <li><a href="about.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Education for Children</a></li>
+            <li><a href="about.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Sustainable Solutions</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col" data-reveal="fade-right" data-reveal-delay="600">
+          <h3 class="footer-col__title">Contacts :</h3>
+          <ul class="link-list link-list--accent">
+            <li><a href="contact.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Assistance</a></li>
+            <li><a href="mailto:contact@refugeehelp.org"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>contact@refugeehelp.org</a></li>
+            <li><a href="donate.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Donate Online</a></li>
+            <li><a href="mailto:donation@refugeehelp.com"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>donation@refugeehelp.com</a></li>
+            <li><span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>U.S.A. of America</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col" data-reveal="fade-right" data-reveal-delay="800">
+          <h3 class="footer-col__title">Recent News :</h3>
+          <ul class="post-list post-list--footer" data-post-list data-limit="2" data-order="asc" data-excerpt-words="7"></ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom" data-reveal="fade-up" data-reveal-delay="200">
+        <a class="site-footer__brand" href="index.html" aria-label="ONG Donation – home">
+          <img src="assets/images/logo/logo-white.png" alt="ONG Donation – Charity" width="200" height="34" loading="lazy">
+        </a>
+        <ul class="inline-list inline-list--dots inline-list--dots-secondary site-footer__links">
+          <li><a href="about.html">Partnerships</a></li>
+          <li><a href="contact.html">Customer Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="social-links" aria-label="Social media">
+          <li><a class="social-links__link" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-facebook"></use></svg></a></li>
+          <li><a class="social-links__link" href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-twitter"></use></svg></a></li>
+          <li><a class="social-links__link" href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-youtube"></use></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

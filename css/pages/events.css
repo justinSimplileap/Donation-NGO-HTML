@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Events listing page
+   ========================================================================== */
+
+.page-hero--events {
+  background-image: url('../../assets/images/hero/donation-hero-village.webp');
+}
+
+.events-intro {
+  padding: 80px 0 40px;
+  background-color: var(--color-white);
+}
+
+.events-intro__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min(var(--container-narrow), 100%);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.events-listing {
+  padding: 40px 0 120px;
+  background: var(--color-white) url('../../assets/images/misc/bg-faded-savanna.webp') center bottom / cover no-repeat;
+}
+
+.events-listing__filters {
+  margin-bottom: 40px;
+}
+
+.events-listing__status {
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.events-listing__status a {
+  color: var(--color-heading);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.event-grid:focus {
+  outline: 0;
+}
+
+.event-grid__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.events-listing__pagination:not(:empty) {
+  margin-top: 60px;
+}
+
+.events-cta {
+  padding: 80px 0 120px;
+  background-color: var(--color-heading);
+  color: var(--color-white);
+}
+
+.events-cta__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+.events-cta__title {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-title);
+}
+
+.events-cta__text {
+  max-width: 640px;
+  font-family: var(--font-secondary);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+@media (max-width: 1024px) {
+  .event-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .events-intro {
+    padding: 60px 0 30px;
+  }
+
+  .event-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
