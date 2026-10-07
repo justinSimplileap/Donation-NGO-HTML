@@ -1,0 +1,456 @@
+/* ==========================================================================
+   About page
+   ========================================================================== */
+
+/* ---------- Hero ---------- */
+.page-hero--about {
+  background-image: url('../../assets/images/hero/about-hero-heart-hands.webp');
+}
+
+/* ---------- Our journey of impact ---------- */
+.journey {
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--color-white) url('../../assets/images/misc/bg-faded-world-map.webp') center / cover no-repeat;
+}
+
+.journey::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, var(--color-white) 0%, rgba(255, 255, 255, 0) 21%);
+}
+
+.journey__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 80px;
+}
+
+.journey__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.journey__goal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.journey__goal-title {
+  line-height: 19.2px;
+  letter-spacing: -0.1px;
+  color: var(--color-heading);
+}
+
+.journey__btn {
+  margin-top: 20px;
+}
+
+.journey__media {
+  height: 500px;
+}
+
+/* ---------- What we focus on ---------- */
+.focus {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.focus-card {
+  position: relative;
+  display: flex;
+  min-height: 725px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.focus-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 80px;
+  text-align: center;
+}
+
+.focus-card--dark {
+  color: var(--color-white);
+  background-color: var(--color-heading);
+}
+
+.focus-card--light {
+  background-color: var(--color-surface);
+}
+
+.focus-card__media {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.focus-card__media img {
+  transition: filter 0.5s ease;
+}
+
+.focus-card__media:hover img {
+  filter: saturate(0);
+}
+
+.focus-card__title {
+  font-size: var(--fs-h5);
+  line-height: var(--lh-title);
+}
+
+.focus-card--dark .focus-card__title,
+.focus-card--dark .focus-card__text {
+  color: var(--color-white);
+}
+
+.focus-card--image {
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.focus-card--image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.68) 100%);
+  opacity: 0.7;
+}
+
+.focus-card__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.focus-card__title--large {
+  padding: 40px;
+  font-size: var(--fs-h4);
+  text-align: center;
+  color: var(--color-white);
+}
+
+/* ---------- Stories that inspire ---------- */
+.stories {
+  overflow: hidden;
+  background: var(--color-white) url('../../assets/images/misc/bg-faded-header.webp') left center / cover no-repeat;
+}
+
+.stories__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.stories__header {
+  width: min(var(--container-narrow), 100%);
+  margin-inline: auto;
+}
+
+.stories__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+/* ---------- Support what matters most ---------- */
+.spotlight {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.spotlight__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 80px;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-border);
+}
+
+.spotlight__details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: 571px;
+}
+
+.spotlight__image {
+  background: url('../../assets/images/about/girl-hands-to-face.webp') center / cover no-repeat;
+}
+
+.spotlight__points {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px;
+  isolation: isolate;
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+.spotlight__points::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('../../assets/images/misc/bg-fallen-tree-desert.webp') center / cover no-repeat;
+  opacity: 0.3;
+  mix-blend-mode: multiply;
+  filter: saturate(0);
+}
+
+.spotlight-point {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.spotlight-point__title {
+  font-size: var(--fs-h5);
+  line-height: var(--lh-title);
+  color: var(--color-white);
+}
+
+.spotlight-point p {
+  color: var(--color-white);
+}
+
+.spotlight__video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: var(--color-heading);
+}
+
+.spotlight__video::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.spotlight__play {
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------- The people behind the mission ---------- */
+.team {
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--color-white) url('../../assets/images/misc/bg-faded-landscape.webp') center / cover no-repeat;
+}
+
+.team::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, var(--color-white) 100%);
+}
+
+.team__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.team__header {
+  width: min(var(--container-narrow), 100%);
+  margin-inline: auto;
+}
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.team-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 600px;
+  padding: 40px;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: var(--radius-md);
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.81) 100%);
+}
+
+.team-card__photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card__name {
+  font-size: var(--fs-h5);
+  line-height: var(--lh-title);
+  text-align: center;
+  color: var(--color-white);
+}
+
+/* ==========================================================================
+   About page – responsive
+   ========================================================================== */
+@media (max-width: 1280px) {
+  .focus-card__body {
+    padding: 60px 40px;
+  }
+
+  .spotlight__intro,
+  .spotlight__points {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .journey__grid {
+    gap: 40px;
+  }
+
+  .journey__media {
+    height: 400px;
+  }
+
+  .focus {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .focus-card {
+    min-height: 0;
+  }
+
+  .focus-card__body {
+    padding: 80px 60px;
+  }
+
+  .focus-card__media {
+    width: min(400px, 100%);
+  }
+
+  .focus-card--image {
+    min-height: 450px;
+  }
+
+  .stories__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .spotlight {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .spotlight__intro {
+    align-items: center;
+    padding: 80px 60px;
+    text-align: center;
+  }
+
+  .spotlight__details {
+    min-height: 350px;
+  }
+
+  .spotlight__points {
+    padding: 80px 60px;
+  }
+
+  .team__grid {
+    gap: 20px;
+  }
+
+  .team-card {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .journey__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .journey__content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .journey__goal-title {
+    text-align: center;
+  }
+
+  .journey__media {
+    height: 300px;
+  }
+
+  .focus-card__body {
+    padding: 80px 20px;
+  }
+
+  .focus-card--image {
+    min-height: 350px;
+  }
+
+  .stories__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .spotlight__intro {
+    padding: 80px 20px;
+  }
+
+  .spotlight__details {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .spotlight__image {
+    min-height: 350px;
+  }
+
+  .spotlight__points {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .spotlight__video {
+    min-height: 350px;
+  }
+
+  .team__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

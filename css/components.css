@@ -1234,6 +1234,35 @@
   transition: width 1.4s var(--ease-out);
 }
 
+/* Tall bar with its label and value printed inside the fill */
+.progress--labeled {
+  height: 30px;
+  margin: 0;
+  background-color: var(--color-surface);
+  box-shadow: none;
+}
+
+.progress--labeled .progress__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  overflow: hidden;
+  font-size: var(--fs-small);
+  line-height: 30px;
+  white-space: nowrap;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.progress__label {
+  padding-left: 15px;
+}
+
+.progress__value {
+  padding-right: 15px;
+}
+
 .cause-card__stats {
   display: flex;
   justify-content: space-between;
@@ -1665,6 +1694,13 @@
   color: var(--color-white);
 }
 
+.page-hero__subtitle {
+  margin-top: 20px;
+  line-height: 19.2px;
+  letter-spacing: var(--ls-button);
+  color: var(--color-white);
+}
+
 .page-hero__edge {
   position: absolute;
   bottom: -1px;
@@ -1779,6 +1815,11 @@
   transform: scale(1.06);
 }
 
+.play-button--dark {
+  color: var(--color-white);
+  background-color: var(--color-heading);
+}
+
 .video-modal {
   width: min(1100px, 100% - 40px);
   max-width: none;
@@ -1828,4 +1869,52 @@
 .video-modal__close:hover {
   color: var(--color-secondary);
   transform: rotate(90deg);
+}
+
+/* ==========================================================================
+   Image tile (square photo link, title revealed on hover / focus)
+   ========================================================================== */
+.image-tile__link {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.image-tile__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-tile__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity var(--duration-base) ease;
+}
+
+.image-tile__title {
+  font-size: var(--fs-h5);
+  line-height: var(--lh-title);
+  text-align: center;
+  color: var(--color-white);
+  transform: translateY(10px);
+  transition: transform var(--duration-base) ease;
+}
+
+.image-tile__link:hover .image-tile__overlay,
+.image-tile__link:focus-visible .image-tile__overlay {
+  opacity: 1;
+}
+
+.image-tile__link:hover .image-tile__title,
+.image-tile__link:focus-visible .image-tile__title {
+  transform: none;
 }
