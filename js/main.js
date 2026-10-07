@@ -6,6 +6,7 @@ import { initParallax } from './components/parallax.js';
 import { initMouseTrack } from './components/mouse-track.js';
 import { initAccordions } from './components/accordion.js';
 import { initBackgroundVideos } from './components/background-video.js';
+import { initVideoModals } from './components/video-modal.js';
 import { initNewsletters } from './components/newsletter.js';
 import { renderPostLists } from './components/post-list.js';
 
@@ -18,5 +19,6 @@ initParallax();
 initMouseTrack();
 initAccordions();
 initBackgroundVideos();
+initVideoModals();
 initNewsletters();
 renderPostLists();

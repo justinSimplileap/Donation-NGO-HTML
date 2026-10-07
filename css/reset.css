@@ -70,3 +70,7 @@ h6 {
 table {
   border-collapse: collapse;
 }
+
+[hidden] {
+  display: none !important;
+}

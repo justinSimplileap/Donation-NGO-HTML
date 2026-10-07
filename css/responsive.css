@@ -528,6 +528,26 @@
     min-height: 350px;
   }
 
+  /* Page hero (inner pages) */
+  .page-hero {
+    padding: 120px 0 180px;
+  }
+
+  .page-hero__title {
+    font-size: 48px;
+  }
+
+  /* Inline testimonial */
+  .testimonial-inline {
+    grid-template-columns: 70px minmax(0, 1fr);
+    column-gap: 20px;
+  }
+
+  .testimonial-inline__avatar {
+    width: 70px;
+    height: 70px;
+  }
+
   /* Footer */
   .site-footer {
     padding-top: 140px;
@@ -799,6 +819,15 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
+  /* Page hero (inner pages) */
+  .page-hero {
+    padding: 120px 0;
+  }
+
+  .page-hero__title {
+    font-size: 40px;
+  }
+
   /* Footer */
   .site-footer {
     padding-top: 110px;
@@ -855,6 +884,22 @@
 
   .flip-card {
     min-height: 320px;
+  }
+
+  .donation-form__step {
+    padding: 24px 20px 0;
+  }
+
+  .donation-form > .donation-widget__secure {
+    padding: 24px 20px 26px;
+  }
+
+  .donation-form__header .donation-widget__heading {
+    padding-inline: 48px;
+  }
+
+  .payment-option__panel {
+    padding: 20px 16px;
   }
 }
 

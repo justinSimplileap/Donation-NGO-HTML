@@ -1,4 +1,5 @@
-import { qs, qsa, prefersReducedMotion } from '../core/dom.js';
+import { qs } from '../core/dom.js';
+import { animateProgressBars } from '../components/progress-bar.js';
 import { getPosts } from '../services/blog-service.js';
 import { getFeaturedCause } from '../services/cause-service.js';
 import { blogCardTemplate } from '../templates/blog-card.js';
@@ -19,30 +20,6 @@ async function renderBlogGrid() {
     renderError(grid, 'News could not be loaded right now.');
     console.warn('[home] Could not load posts.', error);
   }
-}
-
-function animateProgressBars(scope) {
-  const bars = qsa('[data-progress]', scope);
-  const fill = (bar) => {
-    bar.style.width = `${bar.dataset.progress}%`;
-  };
-
-  if (!('IntersectionObserver' in window) || prefersReducedMotion()) {
-    bars.forEach(fill);
-    return;
-  }
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        observer.unobserve(entry.target);
-        fill(entry.target);
-      });
-    },
-    { threshold: 0.5 },
-  );
-  bars.forEach((bar) => observer.observe(bar));
 }
 
 async function renderFeaturedCause() {
