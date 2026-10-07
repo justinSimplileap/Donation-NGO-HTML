@@ -49,4 +49,16 @@
   <symbol id="icon-lock" viewBox="0 0 24 24">
     <path d="M17 10V7.5a5 5 0 0 0-10 0V10H5.5A1.5 1.5 0 0 0 4 11.5v9A1.5 1.5 0 0 0 5.5 22h13a1.5 1.5 0 0 0 1.5-1.5v-9a1.5 1.5 0 0 0-1.5-1.5H17zm-7.5 0V7.5a2.5 2.5 0 0 1 5 0V10h-5z"/>
   </symbol>
+  <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+    <path d="M20 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="icon-play" viewBox="0 0 24 24">
+    <path d="M7 4.2v15.6a1 1 0 0 0 1.53.85l12.3-7.8a1 1 0 0 0 0-1.7L8.53 3.35A1 1 0 0 0 7 4.2z"/>
+  </symbol>
+  <symbol id="icon-credit-card" viewBox="0 0 24 24">
+    <path d="M3.5 4.5h17A1.5 1.5 0 0 1 22 6v12a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18V6a1.5 1.5 0 0 1 1.5-1.5zM4 8v2.5h16V8H4zm1.5 6.5V16h5v-1.5h-5z"/>
+  </symbol>
+  <symbol id="icon-info" viewBox="0 0 24 24">
+    <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1.25 15h-2.5v-6.5h2.5V17zM12 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+  </symbol>
 </svg>

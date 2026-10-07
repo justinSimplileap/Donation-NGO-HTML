@@ -4,11 +4,13 @@ import { escapeHtml, formatCurrency } from '../core/format.js';
 export const causeProgress = (cause) =>
   cause.goal > 0 ? Math.min(100, Math.round((cause.raised / cause.goal) * 100)) : 0;
 
-export const causeCardTemplate = (cause) => {
+/** `layout: 'stacked'` places the image above the content (grid listings). */
+export const causeCardTemplate = (cause, { layout = 'row' } = {}) => {
   const progress = causeProgress(cause);
   const donateUrl = `${config.routes.donate}?cause=${encodeURIComponent(cause.slug)}`;
+  const modifier = layout === 'stacked' ? ' cause-card--stacked' : '';
   return `
-  <article class="cause-card">
+  <article class="cause-card${modifier}">
     <div class="cause-card__media">
       <img src="${escapeHtml(cause.image.src)}" alt="${escapeHtml(cause.image.alt)}"
         width="${cause.image.width}" height="${cause.image.height}" loading="lazy" decoding="async">
@@ -17,7 +19,7 @@ export const causeCardTemplate = (cause) => {
       <div class="cause-card__content">
         <h3 class="cause-card__title">${escapeHtml(cause.title)}</h3>
         <p class="cause-card__text">${escapeHtml(cause.excerpt)}</p>
-        <a class="btn btn--accent" href="${donateUrl}">Donate<span class="visually-hidden"> to ${escapeHtml(cause.title)}</span></a>
+        <a class="btn btn--accent" href="${donateUrl}" data-cause-donate="${escapeHtml(cause.slug)}">Donate<span class="visually-hidden"> to ${escapeHtml(cause.title)}</span></a>
       </div>
       <div class="cause-card__progress">
         <div class="progress" role="progressbar" aria-label="Funds raised for ${escapeHtml(cause.title)}"

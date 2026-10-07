@@ -1,7 +1,6 @@
 import { qs, qsa } from '../core/dom.js';
+import { isValidEmail } from '../core/validation.js';
 import { subscribe } from '../services/newsletter-service.js';
-
-const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function initNewsletter(form) {
   const input = qs('input[type="email"]', form);
@@ -22,7 +21,7 @@ function initNewsletter(form) {
     event.preventDefault();
     const email = input.value.trim();
 
-    if (!EMAIL_PATTERN.test(email)) {
+    if (!isValidEmail(email)) {
       setStatus('Please enter a valid email address.', { isError: true, invalidInput: true });
       input.focus();
       return;

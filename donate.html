@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate – ONG Donation | Give Hope to Refugees and Communities in Need</title>
+  <meta name="description" content="Make a donation to ONG Donation. Choose an amount, support a cause and help provide food, clean water, medical care and shelter to people in crisis.">
+  <link rel="canonical" href="https://www.example.org/donate.html">
+  <meta name="theme-color" content="#f24a29">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ONG Donation">
+  <meta property="og:title" content="Donate – ONG Donation">
+  <meta property="og:description" content="Every contribution helps provide shelter, food and care to those in need. Give today and help rebuild lives.">
+  <meta property="og:url" content="https://www.example.org/donate.html">
+  <meta property="og:image" content="https://www.example.org/assets/images/hero/donation-hero-village.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/jost-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/images/hero/donation-hero-village.webp" as="image" type="image/webp" fetchpriority="high">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/donate.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/pages/donate.js"></script>
+</head>
+<body class="page-donate">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ SITE HEADER ============ -->
+  <header class="site-header" data-header>
+    <div class="topbar">
+      <ul class="inline-list inline-list--dots topbar__links">
+        <li><a href="#">Conditions</a></li>
+        <li><a href="#">Quality</a></li>
+        <li><a href="contact.html">Stay Connected</a></li>
+      </ul>
+      <ul class="inline-list inline-list--dots topbar__social">
+        <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+
+    <div class="navbar">
+      <a class="navbar__brand" href="index.html" aria-label="ONG Donation – home">
+        <img src="assets/images/logo/logo-white.png" alt="ONG Donation – Charity" width="180" height="30">
+      </a>
+
+      <div class="navbar__menu">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+          <span class="visually-hidden" data-nav-toggle-label>Open menu</span>
+          <svg class="icon nav-toggle__open" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-menu"></use></svg>
+          <svg class="icon nav-toggle__close" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-close"></use></svg>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary" data-nav>
+          <ul class="primary-nav__list">
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="index.html">Home</a>
+            </li>
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="about.html">About</a>
+            </li>
+            <li class="primary-nav__item has-dropdown" data-dropdown>
+              <a class="primary-nav__link" href="events.html">Events</a>
+              <button class="primary-nav__caret" type="button" aria-expanded="false" aria-controls="submenu-events" data-dropdown-toggle>
+                <span class="visually-hidden">Show Events submenu</span>
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+              </button>
+              <ul class="dropdown" id="submenu-events">
+                <li><a class="dropdown__link" href="events.html">All Events</a></li>
+                <li><a class="dropdown__link" href="event-single.html">Event Details</a></li>
+              </ul>
+            </li>
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="primary-nav__item has-dropdown" data-dropdown>
+              <a class="primary-nav__link" href="blogs.html">Blogs</a>
+              <button class="primary-nav__caret" type="button" aria-expanded="false" aria-controls="submenu-blogs" data-dropdown-toggle>
+                <span class="visually-hidden">Show Blogs submenu</span>
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-down"></use></svg>
+              </button>
+              <ul class="dropdown" id="submenu-blogs">
+                <li><a class="dropdown__link" href="blogs.html">All Blogs</a></li>
+                <li><a class="dropdown__link" href="blog-single.html">Blog Details</a></li>
+              </ul>
+            </li>
+            <li class="primary-nav__item">
+              <a class="primary-nav__link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <a class="navbar__contact contact-chip" href="tel:+1023358736">
+        <svg class="icon contact-chip__icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-phone"></use></svg>
+        <span class="contact-chip__text">
+          <span class="contact-chip__label">Call Us</span>
+          <span class="contact-chip__value">+ 10 23358736</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ PAGE HERO + DONATION FORM ============ -->
+    <section class="page-hero page-hero--donate section--inset" aria-labelledby="page-title">
+      <div class="container page-hero__inner" data-reveal="fade-up" data-reveal-delay="200">
+        <h1 class="page-hero__title" id="page-title" data-parallax="0.06">Donation</h1>
+
+        <form class="donation-widget donation-widget--primary donation-form" id="donation-form" novalidate data-donation-form aria-labelledby="donation-form-title">
+          <div class="donation-form__header">
+            <button class="donation-form__back" type="button" data-donation-back hidden>
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-left"></use></svg>
+              <span class="visually-hidden">Previous step</span>
+            </button>
+            <h2 class="donation-widget__heading donation-form__title" id="donation-form-title" tabindex="-1" data-donation-title>How much would you like to donate today?</h2>
+            <div class="donation-form__progress" role="progressbar" aria-label="Donation progress" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" data-donation-progress>
+              <span class="donation-form__progress-bar" data-donation-progress-bar></span>
+            </div>
+          </div>
+          <p class="visually-hidden" aria-live="polite" data-donation-announcer></p>
+
+          <!-- Step 1: amount -->
+          <fieldset class="donation-form__step" data-step="amount" data-title="How much would you like to donate today?">
+            <legend class="donation-form__intro">All donations directly impact our organization and help us.</legend>
+            <noscript><p class="notice">Please enable JavaScript to donate online, or email donation@refugeehelp.com.</p></noscript>
+            <p class="donation-form__cause" data-cause-note hidden>
+              You’re supporting <strong data-cause-name></strong>.
+              <button class="donation-form__cause-clear" type="button" data-cause-clear>Remove</button>
+            </p>
+            <div class="donation-widget__legend" id="donation-amount-label">
+              <span>Donation Amount <span class="donation-widget__required" aria-hidden="true">*</span></span>
+              <span class="donation-widget__currency">USD <span aria-hidden="true">$</span></span>
+            </div>
+            <div class="donation-form__amounts" role="group" aria-labelledby="donation-amount-label" aria-describedby="donation-amount-error">
+              <button class="amount-button" type="button" data-amount="10" aria-pressed="true">$10.00</button>
+              <button class="amount-button" type="button" data-amount="25" aria-pressed="false">$25.00</button>
+              <button class="amount-button" type="button" data-amount="50" aria-pressed="false">$50.00</button>
+              <button class="amount-button" type="button" data-amount="100" aria-pressed="false">$100.00</button>
+              <button class="amount-button" type="button" data-amount="250" aria-pressed="false">$250.00</button>
+              <button class="amount-button" type="button" data-amount="500" aria-pressed="false">$500.00</button>
+            </div>
+            <div class="donation-form__field">
+              <label class="donation-form__label" for="donation-custom-amount">Or enter your own amount</label>
+              <div class="donation-form__money">
+                <span class="donation-form__money-symbol" aria-hidden="true">$</span>
+                <input class="donation-form__input" id="donation-custom-amount" name="customAmount" type="text" inputmode="decimal" autocomplete="off" maxlength="12" placeholder="0.00" aria-describedby="donation-amount-hint donation-amount-error">
+              </div>
+              <p class="donation-form__hint" id="donation-amount-hint">Minimum $1.00, for example 25 or 25.50.</p>
+              <p class="donation-form__error" id="donation-amount-error" data-error="amount" hidden></p>
+            </div>
+            <button class="donation-widget__submit" type="button" data-donation-next>
+              Donate now
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg>
+            </button>
+          </fieldset>
+
+          <!-- Step 2: donor details -->
+          <fieldset class="donation-form__step" data-step="donor" data-title="Who’s Giving Today?" hidden>
+            <legend class="donation-form__intro">We’ll never share this information with anyone.</legend>
+            <div class="donation-form__field">
+              <label class="donation-form__label" for="donor-first-name">First name <span class="donation-widget__required" aria-hidden="true">*</span></label>
+              <input class="donation-form__input" id="donor-first-name" name="firstName" type="text" autocomplete="given-name" placeholder="First name" maxlength="50" required aria-describedby="donor-first-name-error">
+              <p class="donation-form__error" id="donor-first-name-error" data-error="firstName" hidden></p>
+            </div>
+            <div class="donation-form__field">
+              <label class="donation-form__label" for="donor-last-name">Last name <span class="donation-form__optional">(optional)</span></label>
+              <input class="donation-form__input" id="donor-last-name" name="lastName" type="text" autocomplete="family-name" placeholder="Last name" maxlength="50" aria-describedby="donor-last-name-error">
+              <p class="donation-form__error" id="donor-last-name-error" data-error="lastName" hidden></p>
+            </div>
+            <div class="donation-form__field">
+              <label class="donation-form__label" for="donor-email">Email Address <span class="donation-widget__required" aria-hidden="true">*</span></label>
+              <input class="donation-form__input" id="donor-email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" autocapitalize="off" maxlength="254" required aria-describedby="donor-email-error">
+              <p class="donation-form__error" id="donor-email-error" data-error="email" hidden></p>
+            </div>
+            <button class="donation-widget__submit" type="button" data-donation-next>
+              Continue
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-arrow-right"></use></svg>
+            </button>
+          </fieldset>
+
+          <!-- Step 3: payment (presentation only – see js/services/payment-gateway.js) -->
+          <fieldset class="donation-form__step" data-step="payment" data-title="Payment Details" hidden>
+            <legend class="donation-form__intro">How would you like to pay for your donation?</legend>
+            <section class="donation-summary" aria-labelledby="donation-summary-title">
+              <h3 class="donation-summary__title" id="donation-summary-title">Donation Summary</h3>
+              <dl>
+                <div class="donation-summary__row" data-summary-row hidden><dt>Cause</dt><dd data-summary="cause"></dd></div>
+                <div class="donation-summary__row"><dt>Payment Amount</dt><dd data-summary="amount">$10.00</dd></div>
+                <div class="donation-summary__row"><dt>Giving Frequency</dt><dd data-summary="frequency">One time</dd></div>
+                <div class="donation-summary__row donation-summary__row--total"><dt>Donation Total</dt><dd data-summary="total">$10.00</dd></div>
+              </dl>
+            </section>
+
+            <div class="notice" data-payment-notice>
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-info"></use></svg>
+              <p>Online payments are <strong>not enabled yet</strong>. No payment will be taken, and this site never asks for card details.</p>
+            </div>
+
+            <fieldset class="payment-methods">
+              <legend class="visually-hidden">Payment method</legend>
+              <label class="payment-option">
+                <input type="radio" name="paymentMethod" value="paypal" checked>
+                Donate with PayPal
+                <svg class="icon payment-option__icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-paypal"></use></svg>
+              </label>
+              <div class="payment-option__panel" data-method-panel="paypal">
+                <p class="payment-option__brand" aria-hidden="true"><svg class="icon"><use href="assets/icons/sprite.svg#icon-paypal"></use></svg>PayPal</p>
+                <p class="payment-option__lead">Make your donation quickly and securely with PayPal</p>
+                <p><strong>How it works:</strong> You will be redirected to PayPal to complete your donation with your debit card, credit card, or with your PayPal account. Once complete, you will be redirected back to this site to view your receipt.</p>
+              </div>
+              <label class="payment-option">
+                <input type="radio" name="paymentMethod" value="card">
+                Donate with card
+                <svg class="icon payment-option__icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-credit-card"></use></svg>
+              </label>
+              <div class="payment-option__panel" data-method-panel="card" hidden>
+                <p class="payment-option__lead">Pay securely by debit or credit card</p>
+                <p><strong>How it works:</strong> Card details are entered on our payment provider’s secure page. They never pass through, and are never stored on, this website.</p>
+              </div>
+            </fieldset>
+
+            <div class="notice notice--error" data-donation-status hidden>
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-info"></use></svg>
+              <p data-donation-status-text></p>
+            </div>
+
+            <button class="donation-widget__submit donation-form__submit" type="submit" data-donation-submit>
+              <span data-donation-submit-label>Donate now</span>
+            </button>
+          </fieldset>
+
+          <p class="donation-widget__secure">
+            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-lock"></use></svg>
+            100% Secure Donation
+          </p>
+        </form>
+      </div>
+      <img class="page-hero__edge" src="assets/images/misc/torn-edge-white.webp" alt="" width="1920" height="101">
+    </section>
+
+    <!-- ============ GIVE THE GIFT OF HOPE ============ -->
+    <section class="section give-hope" aria-labelledby="give-hope-title">
+      <div class="container">
+        <header class="section-heading section-heading--center give-hope__header" data-reveal="fade-up" data-reveal-delay="200">
+          <p class="eyebrow eyebrow--accent">Change Lives</p>
+          <h2 class="section-title" id="give-hope-title">Give the Gift of <em class="text-secondary">Hope</em></h2>
+          <p class="section-text">Donations are the lifeblood of our mission. Every contribution, no matter the size, helps us bring hope and support to those in need. Whether it’s providing food, education, or shelter, your kindness has the power to transform lives and create.</p>
+        </header>
+
+        <div class="give-hope__grid">
+          <div class="give-hope__causes" data-reveal="fade" data-reveal-delay="200">
+            <h3 class="visually-hidden">Causes you can support</h3>
+            <div class="give-hope__cards" role="region" aria-label="Causes" tabindex="-1" data-cause-grid data-per-page="2">
+              <p class="data-placeholder">Loading causes…</p>
+            </div>
+            <nav class="pagination give-hope__pagination" aria-label="Causes pages" data-cause-pagination></nav>
+          </div>
+
+          <div class="flip-card flip-card--help" tabindex="0" data-reveal="fade" data-reveal-delay="400">
+            <div class="flip-card__face flip-card__face--front">
+              <h3 class="flip-card__title">Help Us</h3>
+              <p class="flip-card__text">Stay engaged, and see how your generosity makes a difference.</p>
+            </div>
+            <div class="flip-card__face flip-card__face--back" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY YOUR SUPPORT MATTERS ============ -->
+    <section class="support-matters section--inset" aria-labelledby="support-matters-title">
+      <div class="support-matters__content">
+        <div class="support-matters__intro" data-reveal="fade" data-reveal-delay="200">
+          <p class="eyebrow eyebrow--info">Together, We Can Make a Real Impact</p>
+          <h2 class="section-title" id="support-matters-title">Why Your Support Matters</h2>
+          <p class="section-text">When you donate, you’re not just giving money you’re giving hope. Your contributions help us reach vulnerable communities, provide emergency relief, and launch sustainable programs that empower individuals to rebuild their lives. From offering clean water to funding education, your support creates ripples of positive change that spread far and wide for brighter futures.</p>
+          <div class="section-heading__actions">
+            <a class="btn btn--primary" href="#donation-form">Donate Now</a>
+          </div>
+        </div>
+
+        <div class="support-matters__details">
+          <div class="support-matters__image" aria-hidden="true">
+            <div class="support-matters__image-layer" data-parallax-x="35"></div>
+          </div>
+          <ul class="support-matters__points">
+            <li class="support-point" data-reveal="fade" data-reveal-delay="200">
+              <h3 class="support-point__title">Immediate Impact</h3>
+              <p class="support-point__text">Your donations provide urgent relief, such as meals, medical care, and shelter, to those facing crises right now.</p>
+            </li>
+            <li class="support-point" data-reveal="fade" data-reveal-delay="400">
+              <h3 class="support-point__title">Long-Term Change</h3>
+              <p class="support-point__text">We focus on long-term programs that empower communities, ensuring your generosity makes.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="support-matters__video">
+        <div class="bg-video" data-bg-video="_lT-nIJw5y4" data-bg-video-title="Ngo - Donation video 02" aria-hidden="true"></div>
+        <div class="support-matters__play" data-reveal="fade" data-reveal-delay="200">
+          <a class="play-button" href="https://www.youtube.com/watch?v=_lT-nIJw5y4" data-video-modal="_lT-nIJw5y4" data-video-title="ONG Donation – our work in the field">
+            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-play"></use></svg>
+            <span class="visually-hidden">Play video: our work in the field</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BE THE CHANGE ============ -->
+    <section class="section be-change" aria-labelledby="be-change-title">
+      <div class="container be-change__grid">
+        <div class="be-change__col">
+          <header class="section-heading be-change__header" data-reveal="fade" data-reveal-delay="200">
+            <p class="eyebrow eyebrow--info">Important Support</p>
+            <h2 class="section-title" id="be-change-title">Be the Change They Need</h2>
+          </header>
+          <div class="be-change__media" data-parallax="0.08">
+            <figure class="be-change__figure mask-blob" data-reveal="fade-up" data-reveal-delay="400">
+              <img src="assets/images/hero/hero-friends-reflection.webp" alt="Three young women in colourful beaded jewellery sitting close together" width="1600" height="1148" loading="lazy">
+            </figure>
+          </div>
+        </div>
+
+        <div class="be-change__col">
+          <div class="be-change__media" data-parallax="-0.08">
+            <figure class="be-change__figure mask-blob" data-reveal="fade" data-reveal-delay="600">
+              <img src="assets/images/about/girl-water-bottle.webp" alt="A girl in a blue dress holding up a bottle of clean water" width="600" height="903" loading="lazy">
+            </figure>
+          </div>
+          <div class="be-change__content" data-reveal="fade" data-reveal-delay="800">
+            <p class="section-text">Every day, countless individuals face challenges they cannot overcome alone. Your donation gives them the tools they need to rebuild and thrive. From offering safe spaces for children to providing resources for families to start anew, your generosity creates opportunities for recovery, growth, and hope. Together, we can help them reclaim their dignity.</p>
+            <div class="section-heading__actions">
+              <a class="btn btn--info" href="about.html">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ JOIN OUR MISSION ============ -->
+    <section class="mission section--inset" aria-labelledby="mission-title">
+      <div class="mission__media" aria-hidden="true">
+        <div class="mission__media-layer" data-parallax-bg=".mission"></div>
+      </div>
+
+      <div class="mission__panel">
+        <div class="mission__content">
+          <div class="mission__intro" data-reveal="fade" data-reveal-delay="200">
+            <h2 class="section-title mission__title" id="mission-title">Join Our Mission to Save Lives</h2>
+            <p class="mission__text">We are committed to delivering life-saving aid and resources to refugees in crisis. With your help, we can address urgent needs and offer hope in the most challenging circumstances. Together, we create a lifeline for those who need it most. Providing Critical Support Where It’s Needed Most.</p>
+          </div>
+          <ul class="mission__list" data-reveal="fade" data-reveal-delay="400">
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Rapid Emergency Aid</li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Global Support</li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Trusted Partnerships</li>
+            <li><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Sustainable Recovery Solutions</li>
+          </ul>
+          <div data-reveal="fade-up" data-reveal-delay="600">
+            <a class="btn btn--light" href="#donation-form">Take Action Today</a>
+          </div>
+        </div>
+      </div>
+
+      <ul class="mission__values">
+        <li class="mission__value" data-reveal="fade" data-reveal-delay="200">
+          <img src="assets/images/icons/icon-globe-care.webp" alt="" width="70" height="70" loading="lazy">
+          <h3 class="mission__value-title">Humanitarian Aid</h3>
+        </li>
+        <li class="mission__value" data-reveal="fade" data-reveal-delay="400">
+          <img src="assets/images/icons/icon-donation-jar.webp" alt="" width="70" height="70" loading="lazy">
+          <h3 class="mission__value-title">Transparency</h3>
+        </li>
+        <li class="mission__value" data-reveal="fade" data-reveal-delay="600">
+          <img src="assets/images/icons/icon-give-love.webp" alt="" width="70" height="70" loading="lazy">
+          <h3 class="mission__value-title">Collaboration</h3>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ SUPPORTER TESTIMONIALS ============ -->
+    <section class="section supporters" aria-labelledby="supporters-title">
+      <div class="container supporters__inner">
+        <header class="section-heading supporters__header" data-reveal="fade-up" data-reveal-delay="200">
+          <p class="eyebrow">Important Support</p>
+          <h2 class="section-title" id="supporters-title">Hear from Our <em class="text-secondary">Supporters</em></h2>
+        </header>
+
+        <div data-reveal="fade" data-reveal-delay="200">
+          <div class="slider supporter-slider" data-slider data-autoplay="5000" data-loop aria-roledescription="carousel" aria-label="Supporter testimonials">
+            <div class="slider__viewport">
+              <div class="slider__track" data-slider-track>
+                <figure class="slider__slide testimonial-inline" data-slide role="group" aria-roledescription="slide" aria-label="1 of 2">
+                  <img class="testimonial-inline__avatar" src="assets/images/about/girls-smiling-together.webp" alt="" width="700" height="700" loading="lazy">
+                  <blockquote class="testimonial-inline__text">
+                    <p>I have always believed in the power of kindness, and donating to help refugees is my way of doing something meaningful. When I see the difference my contributions make—providing essential resources like food and shelter—it inspires me to give more. Knowing that I’m helping families rebuild their lives is incredibly fulfilling.</p>
+                  </blockquote>
+                  <figcaption class="testimonial-inline__cite">
+                    <span class="testimonial-inline__name">Adam Turner</span>
+                    <span class="testimonial-inline__role">Miami</span>
+                  </figcaption>
+                </figure>
+                <figure class="slider__slide testimonial-inline" data-slide role="group" aria-roledescription="slide" aria-label="2 of 2">
+                  <img class="testimonial-inline__avatar" src="assets/images/testimonials/testimonial-jessica-rodriguez.webp" alt="" width="160" height="160" loading="lazy">
+                  <blockquote class="testimonial-inline__text">
+                    <p>The plight of refugees has always touched my heart deeply. When I donate, I feel like I’m part of something bigger—offering hope to people who have lost everything. It’s amazing to see how a small act of generosity can provide someone with safety, healthcare, and a fresh start. This is why I continue to support this cause.</p>
+                  </blockquote>
+                  <figcaption class="testimonial-inline__cite">
+                    <span class="testimonial-inline__name">Jennifer Mitchell</span>
+                    <span class="testimonial-inline__role">New York</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="slider__dots slider__dots--info supporter-slider__dots" data-slider-dots></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ SITE FOOTER ============ -->
+  <footer class="site-footer section--inset">
+    <img class="site-footer__edge" src="assets/images/misc/torn-edge-dark.webp" alt="" width="1920" height="116" loading="lazy">
+    <div class="container">
+      <div class="site-footer__top">
+        <div class="site-footer__intro" data-reveal="fade-right" data-reveal-delay="200">
+          <h2 class="site-footer__title">Hope in Action</h2>
+          <p class="site-footer__subtitle">Together, we can rebuild lives and restore dignity.</p>
+        </div>
+        <form class="newsletter" data-newsletter novalidate data-reveal="fade-right" data-reveal-delay="400">
+          <label class="visually-hidden" for="newsletter-email">Email address</label>
+          <input class="newsletter__input" id="newsletter-email" type="email" name="email" placeholder="Email" autocomplete="email" required>
+          <button class="btn btn--secondary newsletter__submit" type="submit">Send</button>
+          <p class="newsletter__status" data-newsletter-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="site-footer__columns">
+        <div class="footer-col" data-reveal="fade-right" data-reveal-delay="200">
+          <h3 class="footer-col__title">Our Mission :</h3>
+          <p class="footer-col__text">We provide immediate and long-term support to war refugees, offering essential resources like food, water, medical care, and shelter.</p>
+          <a class="contact-chip contact-chip--footer" href="tel:+123358736">
+            <span class="contact-chip__badge">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-phone"></use></svg>
+            </span>
+            <span class="contact-chip__text">
+              <span class="contact-chip__label">Call Us</span>
+              <span class="contact-chip__value">+ 1 233 587 36</span>
+            </span>
+          </a>
+        </div>
+
+        <nav class="footer-col" aria-labelledby="footer-info-title" data-reveal="fade-right" data-reveal-delay="400">
+          <h3 class="footer-col__title" id="footer-info-title">Info :</h3>
+          <ul class="link-list link-list--secondary">
+            <li><a href="about.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Emergency Aid</a></li>
+            <li><a href="about.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Medical Assistance</a></li>
+            <li><a href="about.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Psychosocial Support</a></li>
+            <li><a href="about.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Education for Children</a></li>
+            <li><a href="about.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Sustainable Solutions</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col" data-reveal="fade-right" data-reveal-delay="600">
+          <h3 class="footer-col__title">Contacts :</h3>
+          <ul class="link-list link-list--accent">
+            <li><a href="contact.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Assistance</a></li>
+            <li><a href="mailto:contact@refugeehelp.org"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>contact@refugeehelp.org</a></li>
+            <li><a href="donate.html"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>Donate Online</a></li>
+            <li><a href="mailto:donation@refugeehelp.com"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>donation@refugeehelp.com</a></li>
+            <li><span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-chevron-right"></use></svg>U.S.A. of America</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col" data-reveal="fade-right" data-reveal-delay="800">
+          <h3 class="footer-col__title">Recent News :</h3>
+          <ul class="post-list post-list--footer" data-post-list data-limit="2" data-order="asc" data-excerpt-words="7"></ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom" data-reveal="fade-up" data-reveal-delay="200">
+        <a class="site-footer__brand" href="index.html" aria-label="ONG Donation – home">
+          <img src="assets/images/logo/logo-white.png" alt="ONG Donation – Charity" width="200" height="34" loading="lazy">
+        </a>
+        <ul class="inline-list inline-list--dots inline-list--dots-secondary site-footer__links">
+          <li><a href="about.html">Partnerships</a></li>
+          <li><a href="contact.html">Customer Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="social-links" aria-label="Social media">
+          <li><a class="social-links__link" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-facebook"></use></svg></a></li>
+          <li><a class="social-links__link" href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-twitter"></use></svg></a></li>
+          <li><a class="social-links__link" href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-youtube"></use></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

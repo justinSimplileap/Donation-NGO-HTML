@@ -1,6 +1,38 @@
 {
   "causes": [
     {
+      "id": 2,
+      "slug": "make-a-change",
+      "title": "Make a Change",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut diam accumsan, consequat elit quis, laoreet…",
+      "goal": 1000,
+      "raised": 750,
+      "donations": 2,
+      "currency": "USD",
+      "image": {
+        "src": "assets/images/causes/mother-child-park.webp",
+        "alt": "A mother in a colourful wrap carrying her young son on her back in a park",
+        "width": 1200,
+        "height": 800
+      }
+    },
+    {
+      "id": 3,
+      "slug": "support-hope",
+      "title": "Support Hope",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut diam accumsan, consequat elit quis, laoreet…",
+      "goal": 1000,
+      "raised": 680,
+      "donations": 2,
+      "currency": "USD",
+      "image": {
+        "src": "assets/images/causes/mother-newborn-village.webp",
+        "alt": "A mother holding her newborn son outside their village home",
+        "width": 1000,
+        "height": 667
+      }
+    },
+    {
       "id": 1,
       "slug": "stronger-together",
       "title": "Stronger Together",
@@ -16,6 +48,74 @@
         "width": 1200,
         "height": 800
       }
-    }
+    },
+    {
+      "id": 4,
+      "slug": "give-back",
+      "title": "Give Back",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut diam accumsan, consequat elit quis, laoreet…",
+      "goal": 1000,
+      "raised": 540,
+      "donations": 3,
+      "currency": "USD",
+      "image": {
+        "src": "assets/images/causes/woman-smiling-frame.webp",
+        "alt": "A smiling woman framing her face with her hands",
+        "width": 1200,
+        "height": 801
+      }
+    },
+    {
+      "id": 5,
+      "slug": "help-now",
+      "title": "Help Now",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut diam accumsan, consequat elit quis, laoreet…",
+      "goal": 1000,
+      "raised": 820,
+      "donations": 4,
+      "currency": "USD",
+      "image": {
+        "src": "assets/images/causes/family-sitting-together.webp",
+        "alt": "A family sitting together among lush green plants",
+        "width": 1000,
+        "height": 667
+      }
+    },
+    {
+      "id": 6,
+      "slug": "act-for-good",
+      "title": "Act for Good",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut diam accumsan, consequat elit quis, laoreet…",
+      "goal": 1000,
+      "raised": 460,
+      "donations": 2,
+      "currency": "USD",
+      "image": {
+        "src": "assets/images/misc/bg-hands-holding-heart.webp",
+        "alt": "Close-up of a girl holding a small marble in her open hands",
+        "width": 1600,
+        "height": 1068
+      }
+    },
+    {
+      "id": 7,
+      "slug": "rise-together",
+      "title": "Rise Together",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut diam accumsan, consequat elit quis, laoreet…",
+      "goal": 1000,
+      "raised": 300,
+      "donations": 1,
+      "currency": "USD",
+      "image": {
+        "src": "assets/images/hero/hero-boy-smiling.webp",
+        "alt": "A young boy laughing with his chin resting on his hand",
+        "width": 1600,
+        "height": 1071
+      }
+    },
+    { "id": 101, "slug": "first-aid", "title": "First Aid", "listed": false },
+    { "id": 102, "slug": "fresh-water", "title": "Fresh Water", "listed": false },
+    { "id": 103, "slug": "essential-care", "title": "Essential Care", "listed": false },
+    { "id": 104, "slug": "emergency", "title": "Emergency", "listed": false }
   ]
 }

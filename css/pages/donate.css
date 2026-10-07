@@ -1,0 +1,489 @@
+/* ==========================================================================
+   Donation page
+   ========================================================================== */
+
+/* ---------- Hero + donation form ---------- */
+.page-hero--donate {
+  background-image: url('../../assets/images/hero/donation-hero-village.webp');
+}
+
+.page-hero--donate .donation-form {
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* The title's scroll parallax starts slightly lower on desktop, so the card overlaps it less. */
+@media (min-width: 1025px) {
+  .page-hero--donate .donation-form {
+    margin-top: -5px;
+  }
+}
+
+/* ---------- Give the gift of hope ---------- */
+.give-hope {
+  padding-top: 60px;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--color-white) url('../../assets/images/misc/bg-faded-landscape.webp') center / cover no-repeat;
+}
+
+.give-hope::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, var(--color-white) 0%, rgba(255, 255, 255, 0) 20%);
+  opacity: 0.84;
+}
+
+.give-hope__header {
+  width: min(var(--container-narrow), 100%);
+  margin: 0 auto 60px;
+}
+
+.give-hope__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 40px;
+}
+
+.give-hope__cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  scroll-margin-top: 40px;
+}
+
+.give-hope__cards:focus {
+  outline: none;
+}
+
+.give-hope__pagination {
+  margin-top: 32px;
+}
+
+.flip-card.flip-card--help {
+  min-height: 680px;
+}
+
+.flip-card--help .flip-card__face--front {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../assets/images/about/woman-with-laptop.webp');
+}
+
+.flip-card--help .flip-card__face--back {
+  background-image: url('../../assets/images/about/mother-holding-child.webp');
+}
+
+.flip-card--help .flip-card__title {
+  font-size: var(--fs-h4);
+}
+
+/* ---------- Why your support matters ---------- */
+.support-matters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.support-matters__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 80px;
+  background: var(--color-white) url('../../assets/images/misc/bg-faded-world-map.webp') center / cover no-repeat;
+}
+
+.support-matters__details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: 500px;
+}
+
+.support-matters__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.support-matters__image-layer {
+  position: absolute;
+  inset: 0 -10%;
+  background: url('../../assets/images/misc/bg-woven-basket.webp') center / cover no-repeat;
+}
+
+.support-matters__points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px;
+  background-color: var(--color-surface);
+}
+
+.support-point__title {
+  margin-bottom: 20px;
+  font-size: var(--fs-base);
+  line-height: 19.2px;
+  letter-spacing: -0.1px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.support-point__text {
+  color: var(--color-heading);
+}
+
+.support-matters__video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: var(--color-heading);
+}
+
+.support-matters__video::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.support-matters__play {
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------- Be the change ---------- */
+.be-change {
+  overflow: hidden;
+  background: var(--color-white) url('../../assets/images/misc/bg-faded-header.webp') center top / cover no-repeat;
+}
+
+.be-change__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 80px;
+}
+
+.be-change__col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.be-change__header {
+  gap: 20px;
+}
+
+.be-change__figure {
+  height: 700px;
+}
+
+.be-change__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* ---------- Join our mission ---------- */
+.mission {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  min-height: 648px;
+}
+
+.mission__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.mission__media-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 130%;
+  background: url('../../assets/images/about/mother-carrying-load.webp') center / cover no-repeat;
+}
+
+.mission__panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  isolation: isolate;
+  background-color: var(--color-secondary);
+}
+
+.mission__panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('../../assets/images/causes/mother-child-park.webp') center / cover no-repeat;
+  opacity: 0.3;
+  mix-blend-mode: multiply;
+  filter: saturate(0);
+}
+
+.mission__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.mission__title {
+  color: var(--color-white);
+}
+
+.mission__text {
+  margin-top: 20px;
+  color: var(--color-white);
+}
+
+.mission__list {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 5px 20px;
+  width: 100%;
+  color: var(--color-white);
+}
+
+.mission__list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mission__list .icon {
+  font-size: 13px;
+}
+
+.mission__values {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 120px 20px;
+  background-color: var(--color-surface);
+}
+
+.mission__value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.mission__value img {
+  width: 70px;
+  height: 70px;
+  transition: transform var(--duration-base) ease;
+}
+
+.mission__value:hover img {
+  transform: translateY(-6px);
+}
+
+.mission__value-title {
+  font-size: var(--fs-base);
+  line-height: 19.2px;
+  letter-spacing: -0.1px;
+}
+
+/* ---------- Supporter testimonials ---------- */
+.supporters {
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--color-white) url('../../assets/images/misc/bg-faded-world-map.webp') center / cover no-repeat;
+}
+
+.supporters::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, var(--color-white) 100%);
+}
+
+.supporters__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.supporter-slider__dots {
+  margin-top: 12px;
+}
+
+/* ==========================================================================
+   Donation page – responsive
+   ========================================================================== */
+@media (max-width: 1280px) {
+  .support-matters__intro {
+    padding: 60px;
+  }
+
+  .support-matters__points {
+    padding: 60px 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .give-hope__grid {
+    gap: 20px;
+  }
+
+  .flip-card.flip-card--help {
+    min-height: 560px;
+  }
+
+  .support-matters {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .support-matters__intro {
+    padding: 0 20px 80px;
+  }
+
+  .be-change__grid {
+    column-gap: 40px;
+  }
+
+  .be-change .be-change__header,
+  .supporters .supporters__header {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .be-change__col:first-child .be-change__figure {
+    height: 450px;
+  }
+
+  .be-change__col:last-child .be-change__figure {
+    height: 320px;
+  }
+
+  .mission {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+  }
+
+  .mission__media {
+    min-height: 240px;
+  }
+
+  .mission__media-layer {
+    height: 100%;
+  }
+
+  .mission__panel {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mission__content {
+    align-items: center;
+  }
+
+  .mission__list {
+    width: auto;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .mission__values {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .give-hope__header {
+    margin-bottom: 40px;
+  }
+
+  .give-hope__grid,
+  .give-hope__cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .give-hope__grid {
+    gap: 40px;
+  }
+
+  .flip-card.flip-card--help {
+    min-height: 480px;
+  }
+
+  .support-matters__intro {
+    align-items: center;
+    text-align: center;
+  }
+
+  .support-matters__details {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+  }
+
+  .support-matters__image {
+    min-height: 350px;
+  }
+
+  .support-matters__points {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .support-matters__video {
+    min-height: 350px;
+  }
+
+  .be-change__grid {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 40px;
+  }
+
+  .be-change .be-change__header,
+  .supporters .supporters__header {
+    align-items: center;
+    text-align: center;
+  }
+
+  .be-change__col:first-child .be-change__figure,
+  .be-change__col:last-child .be-change__figure {
+    height: 350px;
+  }
+
+  .be-change__content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mission__panel {
+    padding: 60px 20px;
+  }
+
+  .mission__list {
+    grid-template-rows: none;
+    grid-auto-flow: row;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero--donate .donation-form__amounts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
