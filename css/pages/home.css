@@ -2,8 +2,10 @@
    Hero
    ========================================================================== */
 .hero {
+  --hero-shift: calc((100% - 720px) / 2);
   position: relative;
-  height: 720px;
+  height: clamp(640px, calc(100vh - var(--topbar-height) - var(--header-height) - var(--ticker-height)), 960px);
+  height: clamp(640px, calc(100svh - var(--topbar-height) - var(--header-height) - var(--ticker-height)), 960px);
   overflow: hidden;
   background-color: var(--color-white);
 }
@@ -19,10 +21,11 @@
 
 .hero__band {
   position: absolute;
-  top: 429px;
+  top: calc(403px + var(--hero-shift));
   left: 0;
   right: 0;
-  height: 265px;
+  bottom: 70px;
+  overflow: hidden;
   background-color: var(--color-secondary);
 }
 
@@ -30,8 +33,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../../assets/images/misc/bg-woven-basket.webp') center / cover no-repeat;
+  background: url('../../assets/images/misc/bg-woven-basket.webp') 40% 2% / cover no-repeat;
   opacity: 0.18;
+  transform: scale(1.05);
 }
 
 .hero__media {
@@ -122,10 +126,10 @@
 .ticker {
   position: relative;
   z-index: 9;
-  padding: 20px 0;
+  padding: 18px 0;
   overflow: hidden;
   background-color: var(--color-accent);
-  border-bottom: 1px solid var(--color-border-dark);
+
 }
 
 .ticker::before {
@@ -133,7 +137,7 @@
   position: absolute;
   inset: 0;
   background: url('../../assets/images/about/women-community-group.webp') center / cover no-repeat;
-  opacity: 0.23;
+  opacity: 0.11;
   mix-blend-mode: multiply;
 }
 
@@ -163,7 +167,7 @@
    Impact intro
    ========================================================================== */
 .impact-intro {
-  background: var(--color-surface) url('../../assets/images/misc/bg-faded-landscape.webp') center / cover no-repeat;
+  background: var(--color-surface) url('../../assets/images/misc/bg-faded-landscape.webp') 12% / cover no-repeat;
 }
 
 .impact-intro__grid {
@@ -191,7 +195,7 @@
 
 .quote-card {
   position: absolute;
-  left: 10px;
+  left: 60px;
   bottom: 0;
   width: 334px;
   max-width: calc(100% - 10px);

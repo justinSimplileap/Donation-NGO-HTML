@@ -79,9 +79,9 @@
   align-self: stretch;
   display: flex;
   align-items: center;
-  flex: 0 0 280px;
+  flex: 0 0 340px;
   padding: 25px 20px;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
   overflow: hidden;
 }
 
@@ -90,7 +90,8 @@
   position: absolute;
   inset: 0;
   background: url('../assets/images/misc/bg-woven-basket.webp') center / cover no-repeat;
-  opacity: 0.26;
+  opacity: 0.12;
+  mix-blend-mode: multiply;
 }
 
 .navbar__brand img {

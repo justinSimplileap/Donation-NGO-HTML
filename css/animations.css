@@ -20,18 +20,6 @@
   transform: none;
 }
 
-/* ==========================================================================
-   Hero
-   ========================================================================== */
-.hero-slider__slide img {
-  transform: scale(1);
-  transition: transform 20s linear;
-}
-
-.hero-slider__slide.is-active img {
-  transform: scale(1.3);
-}
-
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -64,12 +52,12 @@
     transform: none;
   }
 
-  .hero-slider__slide.is-active img {
-    transform: none;
-  }
-
   [data-parallax],
   [data-parallax-x] {
     transform: none !important;
+  }
+
+  [data-mouse-track] {
+    translate: none !important;
   }
 }

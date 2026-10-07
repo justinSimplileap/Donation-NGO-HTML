@@ -120,14 +120,14 @@
       <div class="hero__band" aria-hidden="true"></div>
 
       <div class="hero__media">
-        <div class="slider slider--fade hero-slider" data-slider data-effect="fade" data-autoplay="5000" data-loop aria-roledescription="carousel" aria-label="Featured photos">
+        <div class="slider hero-slider" data-slider data-autoplay="5000" data-pause-on-hover="false" data-loop aria-roledescription="carousel" aria-label="Featured photos">
           <div class="slider__viewport">
             <div class="slider__track" data-slider-track>
               <div class="slider__slide hero-slider__slide" data-slide role="group" aria-roledescription="slide" aria-label="1 of 2">
                 <img src="assets/images/hero/hero-friends-reflection.webp" alt="Three young women wearing traditional beaded jewellery sitting together" width="1600" height="1148" fetchpriority="high">
               </div>
-              <div class="slider__slide hero-slider__slide" data-slide role="group" aria-roledescription="slide" aria-label="2 of 2">
-                <img src="assets/images/hero/hero-boy-smiling.webp" alt="A young boy laughing with his chin resting on his hand" width="1600" height="1071" loading="lazy">
+              <div class="slider__slide hero-slider__slide hero-slider__slide--left" data-slide role="group" aria-roledescription="slide" aria-label="2 of 2">
+                <img src="assets/images/hero/hero-boy-smiling.webp" alt="A young boy laughing with his chin resting on his hand" width="1600" height="1071" decoding="async">
               </div>
             </div>
           </div>
@@ -137,14 +137,14 @@
 
       <div class="container hero__inner">
         <div class="hero__content" data-reveal="fade">
-          <h1 class="hero__title" id="hero-title">HELP US</h1>
+          <h1 class="hero__title" id="hero-title" data-mouse-track="24">HELP US</h1>
           <p class="hero__text">Enjoy peace of mind knowing your support is making a real difference, with our professional services designed to address the most urgent needs and create lasting change.</p>
           <a class="btn btn--primary btn--lg hero__btn" href="#donate">
             <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#icon-heart"></use></svg>
             Donate Now
           </a>
         </div>
-        <p class="hero__title hero__title--outline" aria-hidden="true" data-reveal="fade">HELP US</p>
+        <p class="hero__title hero__title--outline" aria-hidden="true" data-reveal="fade" data-mouse-track="24">HELP US</p>
       </div>
     </section>
 

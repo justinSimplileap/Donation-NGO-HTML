@@ -7,7 +7,7 @@ const SWIPE_THRESHOLD = 50;
  *
  * Markup: [data-slider] > .slider__viewport > [data-slider-track] > [data-slide]*
  * Optional: [data-slider-dots], [data-slider-prev], [data-slider-next]
- * Options:  data-autoplay="ms", data-loop, data-effect="fade"
+ * Options:  data-autoplay="ms", data-loop, data-effect="fade", data-pause-on-hover="false"
  */
 export function initSlider(root) {
   const track = qs('[data-slider-track]', root);
@@ -22,7 +22,10 @@ export function initSlider(root) {
   const loop = root.hasAttribute('data-loop');
   const autoplayDelay = Number(root.dataset.autoplay) || 0;
 
+  const useClones = loop && !isFade && slides.length > 1;
+
   let index = 0;
+  let position = 0;
   let timer = null;
   let isPaused = false;
   let isVisible = true;
@@ -53,6 +56,23 @@ export function initSlider(root) {
     });
   }
 
+  /* Edge clones let a looping track wrap forward/backward without rewinding. */
+  if (useClones) {
+    const makeClone = (slide) => {
+      const clone = slide.cloneNode(true);
+      clone.removeAttribute('data-slide');
+      clone.removeAttribute('aria-label');
+      clone.removeAttribute('role');
+      clone.removeAttribute('aria-roledescription');
+      clone.setAttribute('aria-hidden', 'true');
+      clone.classList.add('is-clone');
+      clone.inert = true;
+      return clone;
+    };
+    track.prepend(makeClone(slides[slides.length - 1]));
+    track.append(makeClone(slides[0]));
+  }
+
   const normalise = (i) => {
     if (loop) return (i + slides.length) % slides.length;
     return Math.max(0, Math.min(slides.length - 1, i));
@@ -60,11 +80,30 @@ export function initSlider(root) {
 
   const setTrackOffset = (dragPx = 0) => {
     if (isFade) return;
-    track.style.transform = `translate3d(calc(${-index * 100}% + ${dragPx}px), 0, 0)`;
+    const offset = useClones ? position + 1 : position;
+    track.style.transform = `translate3d(calc(${-offset * 100}% + ${dragPx}px), 0, 0)`;
   };
 
+  /* After landing on a clone, jump to the matching real slide without animating. */
+  const snapFromClone = () => {
+    if (!useClones || position === index) return;
+    position = index;
+    track.style.transition = 'none';
+    setTrackOffset();
+    void track.offsetWidth;
+    track.style.transition = '';
+  };
+
+  if (useClones) {
+    track.addEventListener('transitionend', (event) => {
+      if (event.target === track && event.propertyName === 'transform') snapFromClone();
+    });
+  }
+
   function goTo(target) {
+    snapFromClone();
     index = normalise(target);
+    position = useClones ? Math.max(-1, Math.min(slides.length, target)) : index;
     setTrackOffset();
 
     slides.forEach((slide, i) => {
@@ -119,8 +158,10 @@ export function initSlider(root) {
 
   if (autoplayDelay > 0) {
     viewport.setAttribute('aria-live', canAutoplay() ? 'off' : 'polite');
-    root.addEventListener('pointerenter', pause);
-    root.addEventListener('pointerleave', resume);
+    if (root.dataset.pauseOnHover !== 'false') {
+      root.addEventListener('pointerenter', pause);
+      root.addEventListener('pointerleave', resume);
+    }
     root.addEventListener('focusin', pause);
     root.addEventListener('focusout', (event) => {
       if (!root.contains(event.relatedTarget)) resume();
@@ -166,6 +207,7 @@ export function initSlider(root) {
 
   viewport.addEventListener('pointerdown', (event) => {
     if (event.pointerType === 'mouse' && event.button !== 0) return;
+    snapFromClone();
     pointerId = event.pointerId;
     startX = event.clientX;
     startY = event.clientY;

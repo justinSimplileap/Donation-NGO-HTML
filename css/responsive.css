@@ -6,7 +6,7 @@
 /* ---------- Laptop (≤1280px) ---------- */
 @media (max-width: 1280px) {
   .navbar__brand {
-    flex-basis: 240px;
+    flex-basis: 270px;
   }
 
   .primary-nav__link {
@@ -103,7 +103,7 @@
   }
 
   .navbar__brand {
-    flex-basis: 258px;
+    flex-basis: 280px;
     padding: 20px;
   }
 
@@ -225,7 +225,7 @@
 
   .hero__band {
     top: 0;
-    height: 100%;
+    bottom: 0;
   }
 
   .hero__inner {
@@ -244,7 +244,7 @@
 
   .hero__title {
     font-size: 112px;
-    line-height: 1;
+    line-height: 0.85;
   }
 
   .hero__title--outline {

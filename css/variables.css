@@ -33,6 +33,7 @@
 :root {
   /* Brand colours */
   --color-primary: #f24a29;
+  --color-primary-dark: #d63c1f;
   --color-secondary: #f2a922;
   --color-accent: #22b6af;
   --color-info: #2272b6;
@@ -84,6 +85,7 @@
   --container-narrow: 675px;
   --header-height: 81px;
   --topbar-height: 37px;
+  --ticker-height: 80px;
 
   /* Spacing scale */
   --space-2xs: 5px;

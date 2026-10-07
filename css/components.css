@@ -176,7 +176,6 @@
 .contact-chip__icon {
   font-size: 40px;
   color: var(--color-heading);
-  transform: scaleX(-1);
 }
 
 .contact-chip__text {
