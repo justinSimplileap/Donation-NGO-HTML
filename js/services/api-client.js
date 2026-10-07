@@ -6,6 +6,7 @@ const LOCAL_RESOURCES = {
   causes: 'causes.json',
   events: 'events.json',
   gallery: 'gallery.json',
+  aboutStories: 'about-stories.json',
 };
 
 const cache = new Map();
