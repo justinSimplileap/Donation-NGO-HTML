@@ -61,4 +61,20 @@
   <symbol id="icon-info" viewBox="0 0 24 24">
     <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1.25 15h-2.5v-6.5h2.5V17zM12 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
   </symbol>
+  <symbol id="icon-user" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3.2"/><path d="M5.8 18.8c1.3-2.3 3.5-3.6 6.2-3.6s4.9 1.3 6.2 3.6"/></g>
+  </symbol>
+  <symbol id="icon-calendar" viewBox="0 0 24 24">
+    <path d="M7 2h2v2h6V2h2v2h2.5A1.5 1.5 0 0 1 21 5.5v15a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 20.5v-15A1.5 1.5 0 0 1 4.5 4H7V2zM5 9v11h14V9H5z"/>
+  </symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6.5V12l3.5 2"/></g>
+  </symbol>
+  <symbol id="icon-comment" viewBox="0 0 24 24">
+    <path d="M12 3C6.5 3 2 6.6 2 11c0 2.2 1.1 4.2 2.9 5.6L4 21l4.6-2.6c1.1.3 2.2.5 3.4.5 5.5 0 10-3.6 10-8S17.5 3 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M7.5 12.2a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4zm4.5 0a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4zm4.5 0a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4z"/>
+  </symbol>
+  <symbol id="icon-linkedin" viewBox="0 0 24 24">
+    <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3v-11zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.15-.02-2.64-1.6-2.64-1.62 0-1.86 1.26-1.86 2.56v4.92h-4v-11z"/>
+  </symbol>
 </svg>

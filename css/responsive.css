@@ -184,7 +184,7 @@
   }
 
   .primary-nav__link:hover,
-  .primary-nav__link[aria-current='page'] {
+  .primary-nav__link[aria-current] {
     color: var(--color-secondary);
   }
 

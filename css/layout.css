@@ -156,7 +156,7 @@
 }
 
 .primary-nav__link:hover,
-.primary-nav__link[aria-current='page'],
+.primary-nav__link[aria-current],
 .primary-nav__item:hover > .primary-nav__caret {
   color: var(--color-primary);
 }
