@@ -34,16 +34,16 @@
     },
     {
       "id": 1,
-      "slug": "stronger-together",
-      "title": "Stronger Together",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut diam accumsan, consequat elit quis, laoreet…",
+      "slug": "Our Journey Is Just Beginning",
+      "title": "Our Journey Is Just Beginning",
+      "excerpt": "As our initiatives develop, we aim to document our progress transparently through programme updates, measurable outcomes and stories that reflect the difference our work makes.",
       "goal": 1000,
       "raised": 750,
       "donations": 2,
-      "currency": "USD",
+      "currency": "INR",
       "featured": true,
       "image": {
-        "src": "assets/images/causes/girl-drinking-tap-water.webp",
+        "src": "assets/images/causes/girl-drinking-tap-water1.webp",
         "alt": "Girl drinking water from a tap mounted on a brick pillar",
         "width": 1200,
         "height": 800
@@ -57,7 +57,7 @@
       "goal": 1000,
       "raised": 540,
       "donations": 3,
-      "currency": "USD",
+      "currency": "INR",
       "image": {
         "src": "assets/images/causes/woman-smiling-frame.webp",
         "alt": "A smiling woman framing her face with her hands",

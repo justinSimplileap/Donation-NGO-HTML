@@ -167,7 +167,7 @@
    Impact intro
    ========================================================================== */
 .impact-intro {
-  background: var(--color-surface) url('../../assets/images/misc/bg-faded-landscape.webp') 12% / cover no-repeat;
+  background: var(--color-surface) url('../../assets/images/misc/bg-faded-landscape1.webp') 12% / cover no-repeat;
 }
 
 .impact-intro__grid {
@@ -336,7 +336,7 @@
   right: 0;
   z-index: -1;
   height: 200%;
-  background: url('../../assets/images/about/mother-baby-on-back.webp') 0 42% / 40% auto no-repeat;
+  background: url('../../assets/images/about/mother-baby-on-back1.webp') 0 42% / 40% auto no-repeat;
   pointer-events: none;
   transition: transform 1s cubic-bezier(0, 0.33, 0.07, 1.03);
   will-change: transform;
