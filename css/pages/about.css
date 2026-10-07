@@ -232,29 +232,8 @@
 }
 
 .spotlight__video {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 400px;
-  overflow: hidden;
-  isolation: isolate;
-  background-color: var(--color-heading);
-}
-
-.spotlight__video::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0) 100%);
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-.spotlight__play {
-  position: relative;
-  z-index: 2;
+  background: url('../../assets/images/about/portrait-male-friends-sharing-affectionate-moment-friendship.webp') center / cover no-repeat;
 }
 
 /* ---------- The legacy continues (founders) ---------- */
