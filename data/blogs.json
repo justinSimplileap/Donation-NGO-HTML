@@ -4,90 +4,491 @@
       "id": 1,
       "slug": "make-an-impact",
       "title": "Make an Impact",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "publishedAt": "2025-01-31",
-      "author": "Charity Team",
+      "excerpt": "Clean, safe water is changing daily life in our villages.",
+      "publishedAt": "2025-01-31T07:30:00",
+      "author": "riley-johnson",
       "category": "Clean Water",
       "image": {
         "src": "assets/images/about/boy-drinking-water.webp",
         "alt": "Smiling boy drinking water from an outdoor tap",
         "width": 1024,
         "height": 683
-      }
+      },
+      "cover": {
+        "src": "assets/images/blog/cover-make-an-impact.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Smiling boy drinking water from an outdoor tap"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "text": "Water Changes Everything"
+        },
+        {
+          "type": "paragraph",
+          "text": "When the nearest safe water source is a two-hour walk away, every other plan has to wait. Over the past year our teams have repaired wells, installed village taps and trained local caretakers to keep them running. The result is simple and powerful: children who used to carry water now carry school books, and families spend far less on treating illness caused by unsafe water."
+        },
+        {
+          "type": "quote",
+          "text": "Before the tap was installed, my daughters left home before sunrise to fetch water. Now they reach school on time and I can work in the fields all morning.",
+          "cite": "Amina, mother of three"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "src": "assets/images/causes/girl-drinking-tap-water.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "A young girl drinking from a new village tap",
+              "caption": "A new tap in the village square"
+            },
+            {
+              "src": "assets/images/about/girl-water-bottle.webp",
+              "width": 600,
+              "height": 903,
+              "alt": "A girl holding a bottle of clean drinking water",
+              "caption": "Clean water for the school day"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Each water point is planned with the community that will use it. Local committees choose the location, collect a small maintenance fund and report problems to our field team. This shared ownership is what keeps a tap working long after the construction crew has left."
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "How a water point is chosen",
+              "text": "We map the distance families walk today, test nearby sources and agree the final site with the village committee."
+            },
+            {
+              "title": "Training local caretakers",
+              "text": "Two caretakers per site learn basic repairs and hygiene promotion, so small faults are fixed in days, not months."
+            },
+            {
+              "title": "Measuring the difference",
+              "text": "We track school attendance, reported illness and time saved, and share the results with every donor who funded the project."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 2,
       "slug": "join-the-cause",
       "title": "Join the Cause",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "publishedAt": "2025-01-31",
-      "author": "Charity Team",
+      "excerpt": "How a classroom and a few notebooks reopened a future.",
+      "publishedAt": "2025-01-31T07:53:00",
+      "author": "taylor-davis",
       "category": "Education",
       "image": {
         "src": "assets/images/about/girl-with-paper.webp",
         "alt": "Little girl in a colourful dress holding a sheet of paper",
         "width": 1200,
         "height": 803
-      }
+      },
+      "cover": {
+        "src": "assets/images/blog/cover-join-the-cause.webp",
+        "width": 1600,
+        "height": 1071,
+        "alt": "Little girl in a colourful dress holding a sheet of paper"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "text": "Learning Without Interruption"
+        },
+        {
+          "type": "paragraph",
+          "text": "For displaced children, losing a home often means losing a classroom too. Our temporary learning spaces give them a safe place to read, write and play while their families rebuild. Volunteer teachers follow a flexible curriculum, so children can join at any time of the year and move back into the national school system as soon as they are able."
+        },
+        {
+          "type": "quote",
+          "text": "The first week she only watched the other children. By the end of the month she was reading short stories out loud to her little brother.",
+          "cite": "Michael Davis, volunteer teacher"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "src": "assets/images/about/woman-with-laptop.webp",
+              "width": 900,
+              "height": 1350,
+              "alt": "A teacher holding a laptop outdoors",
+              "caption": "Training teachers in digital skills"
+            },
+            {
+              "src": "assets/images/hero/hero-boy-smiling.webp",
+              "width": 1600,
+              "height": 1071,
+              "alt": "A boy laughing with his chin resting on his hand",
+              "caption": "Laughter back in the classroom"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "A school kit costs less than a family meal out, yet it holds everything a child needs for a term: notebooks, pencils, a reading book and a sturdy bag. Joining the cause can be as simple as sponsoring one kit, or as hands-on as volunteering an afternoon each week."
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "What a learning space provides",
+              "text": "Daily lessons in literacy and numeracy, a safe play area, drinking water and a nutritious snack for every child."
+            },
+            {
+              "title": "Supporting teachers",
+              "text": "Volunteer teachers receive training in trauma-aware teaching, lesson planning and child protection before their first class."
+            },
+            {
+              "title": "Ways to get involved",
+              "text": "Sponsor a school kit, donate books in local languages, or contact us about volunteering with our education team."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 3,
       "slug": "together-we-can",
       "title": "Together We Can",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "publishedAt": "2025-01-31",
-      "author": "Charity Team",
+      "excerpt": "Neighbours, volunteers and partners rebuilding side by side.",
+      "publishedAt": "2025-01-31T08:15:00",
+      "author": "casey-miller",
       "category": "Community",
       "image": {
         "src": "assets/images/about/girl-red-hoodie.webp",
         "alt": "Young girl in a red top standing on a dusty village path",
         "width": 1024,
         "height": 683
-      }
+      },
+      "cover": {
+        "src": "assets/images/blog/cover-together-we-can.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Young girl in a red top standing on a dusty village path"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "text": "Stronger as a Community"
+        },
+        {
+          "type": "paragraph",
+          "text": "Recovery is never the work of one organisation. In every region we serve, we partner with local leaders, women’s groups and faith communities who know their neighbours’ needs better than anyone. Together we decide where help is needed first, from repairing shelters to reopening the weekly market that keeps local families earning."
+        },
+        {
+          "type": "quote",
+          "text": "They did not arrive with a plan already written. They sat with us, listened, and then we built the plan together.",
+          "cite": "Joseph, village council member"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "src": "assets/images/about/women-colorful-dresses.webp",
+              "width": 700,
+              "height": 1050,
+              "alt": "Women in colourful dresses gathered together",
+              "caption": "Women leading the community council"
+            },
+            {
+              "src": "assets/images/causes/mother-child-park.webp",
+              "width": 1200,
+              "height": 800,
+              "alt": "A mother and her child sitting together outdoors",
+              "caption": "Families rebuilding side by side"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Community-led projects last longer and reach further. When residents help design a programme, they also help run it, and the skills they gain stay with the village long after our teams move on to the next emergency."
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Listening first",
+              "text": "Every project begins with open community meetings where residents set priorities in their own words."
+            },
+            {
+              "title": "Local partnerships",
+              "text": "We work through trusted local organisations, sharing resources and training instead of replacing what already works."
+            },
+            {
+              "title": "Handing over",
+              "text": "Projects are designed from day one to be managed by the community, with our support stepping back gradually."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 4,
       "slug": "give-hope-today",
       "title": "Give Hope Today",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "publishedAt": "2025-01-31",
-      "author": "Charity Team",
+      "excerpt": "Every gift, however small, reaches a family in need.",
+      "publishedAt": "2025-01-31T08:40:00",
+      "author": "riley-johnson",
       "category": "Donations",
       "image": {
         "src": "assets/images/misc/bg-hands-holding-heart.webp",
         "alt": "Cupped hands holding a small white heart-shaped stone",
         "width": 1600,
         "height": 1068
-      }
+      },
+      "cover": {
+        "src": "assets/images/misc/bg-hands-holding-heart.webp",
+        "width": 1600,
+        "height": 1068,
+        "alt": "Cupped hands holding a small white heart"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "text": "Where Your Gift Goes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Donors often ask what difference a single gift can make. The honest answer is: more than you might expect. Because we buy supplies close to where they are needed and work with local volunteers, a small donation can cover a family food parcel, a hygiene kit or a warm blanket for the winter months."
+        },
+        {
+          "type": "quote",
+          "text": "We received food and blankets the same week the storm destroyed our home. It gave us time to breathe and start again.",
+          "cite": "Fatima, grandmother of four"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "src": "assets/images/about/elder-woman-portrait.webp",
+              "width": 700,
+              "height": 700,
+              "alt": "Portrait of an elderly woman wearing a headscarf",
+              "caption": "Support for elders living alone"
+            },
+            {
+              "src": "assets/images/causes/woman-smiling-frame.webp",
+              "width": 1200,
+              "height": 801,
+              "alt": "A smiling woman standing in a doorway",
+              "caption": "A family receiving a winter kit"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "We publish where funds are spent and report back on every major appeal. Giving monthly helps us plan ahead, buy in bulk and respond faster when an emergency strikes."
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "What a small gift covers",
+              "text": "A hygiene kit, a school kit or several days of food for a family, depending on local prices."
+            },
+            {
+              "title": "Why monthly giving helps",
+              "text": "Regular support lets us pre-position supplies so we can respond within days of a crisis."
+            },
+            {
+              "title": "Our commitment to transparency",
+              "text": "We share financial reports and project updates so you can see exactly how your support is used."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 5,
       "slug": "be-the-change",
       "title": "Be the Change",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "publishedAt": "2025-01-31",
-      "author": "Charity Team",
+      "excerpt": "Children are the heart of every programme we run.",
+      "publishedAt": "2025-01-31T09:05:00",
+      "author": "taylor-davis",
       "category": "Children",
       "image": {
         "src": "assets/images/about/girl-smiling-portrait.webp",
         "alt": "Close-up portrait of a smiling girl",
         "width": 1024,
         "height": 685
-      }
+      },
+      "cover": {
+        "src": "assets/images/blog/cover-be-the-change.webp",
+        "width": 1600,
+        "height": 1071,
+        "alt": "Close-up portrait of a smiling young girl"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "text": "Putting Children First"
+        },
+        {
+          "type": "paragraph",
+          "text": "Children carry the heaviest burden in any crisis, and they also recover with remarkable strength when given the chance. Our child-friendly spaces offer play, routine and caring adults during the most uncertain months, while trained staff watch for signs of distress and connect families with specialist support."
+        },
+        {
+          "type": "quote",
+          "text": "Here the children can simply be children again. For a few hours a day, they laugh, draw and forget their worries.",
+          "cite": "Grace, child protection officer"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "src": "assets/images/blog/child-playing-sand.webp",
+              "width": 900,
+              "height": 600,
+              "alt": "A young child playing in the sand",
+              "caption": "Safe spaces to play"
+            },
+            {
+              "src": "assets/images/about/child-covering-mouth.webp",
+              "width": 1024,
+              "height": 683,
+              "alt": "A shy child covering their mouth with their hands",
+              "caption": "Shy smiles at the new learning centre"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Being the change does not require grand gestures. Sponsoring play materials, volunteering as a reading buddy or simply sharing our work with friends all help more children find a safe place to grow."
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Child-friendly spaces",
+              "text": "Supervised areas with games, art and storytelling, open every day in camps and host communities."
+            },
+            {
+              "title": "Protection and wellbeing",
+              "text": "Staff are trained to identify children at risk and refer them to health, legal or psychosocial services."
+            },
+            {
+              "title": "Family support",
+              "text": "Parenting sessions help caregivers support children through stress and change at home."
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 6,
       "slug": "your-help-matters",
       "title": "Your Help Matters",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "publishedAt": "2025-01-31",
-      "author": "Charity Team",
+      "excerpt": "Basic health care and hygiene that keep families well.",
+      "publishedAt": "2025-01-31T09:30:00",
+      "author": "casey-miller",
       "category": "Health",
       "image": {
         "src": "assets/images/about/mother-washing-child.webp",
         "alt": "Girl washing a small child in a blue basin outdoors",
         "width": 1200,
         "height": 800
+      },
+      "cover": {
+        "src": "assets/images/blog/cover-your-help-matters.webp",
+        "width": 1600,
+        "height": 1067,
+        "alt": "Girl washing a small child in a blue basin outdoors"
+      },
+      "content": [
+        {
+          "type": "heading",
+          "text": "Health Care Close to Home"
+        },
+        {
+          "type": "paragraph",
+          "text": "Many of the families we meet live hours away from the nearest clinic. Our mobile health teams bring check-ups, vaccinations and maternal care directly to villages and camps, while community health volunteers teach the hygiene habits that prevent illness in the first place."
+        },
+        {
+          "type": "quote",
+          "text": "The nurse came to our village when my baby had a fever. Without her, I would have had to walk all night to reach the hospital.",
+          "cite": "Mariam, young mother"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "src": "assets/images/blog/mother-holding-newborn.webp",
+              "width": 900,
+              "height": 600,
+              "alt": "A mother holding her newborn baby",
+              "caption": "Postnatal care for new mothers"
+            },
+            {
+              "src": "assets/images/about/mother-holding-child.webp",
+              "width": 900,
+              "height": 1350,
+              "alt": "A mother holding her young child close",
+              "caption": "Health checks for the youngest"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Your help keeps these teams on the road: fuel for the vehicles, medicines for the clinics and training for local volunteers who stay with their communities year-round."
+        },
+        {
+          "type": "accordion",
+          "items": [
+            {
+              "title": "Mobile clinics",
+              "text": "Weekly visits provide consultations, vaccinations and referrals for patients who need hospital care."
+            },
+            {
+              "title": "Mothers and newborns",
+              "text": "Antenatal check-ups, safe delivery kits and postnatal visits help mothers and babies stay healthy."
+            },
+            {
+              "title": "Hygiene promotion",
+              "text": "Volunteers run hand-washing and sanitation sessions that reduce the spread of preventable disease."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "slug": "riley-johnson",
+      "name": "Riley Johnson",
+      "role": "Field Coordinator",
+      "bio": "Riley coordinates our emergency response teams and has spent more than ten years delivering water, food and shelter projects with local communities.",
+      "avatar": {
+        "src": "assets/images/blog/mother-holding-newborn.webp",
+        "width": 900,
+        "height": 600
+      }
+    },
+    {
+      "slug": "taylor-davis",
+      "name": "Taylor Davis",
+      "role": "Education Lead",
+      "bio": "Taylor leads our education and child protection programmes, training volunteer teachers and setting up safe learning spaces for displaced children.",
+      "avatar": {
+        "src": "assets/images/about/woman-with-laptop.webp",
+        "width": 900,
+        "height": 1350
+      }
+    },
+    {
+      "slug": "casey-miller",
+      "name": "Casey Miller",
+      "role": "Community Health Manager",
+      "bio": "Casey manages our mobile health teams and community partnerships, making sure care reaches families wherever they are.",
+      "avatar": {
+        "src": "assets/images/about/mother-baby-on-back.webp",
+        "width": 900,
+        "height": 1350
       }
     }
   ]
