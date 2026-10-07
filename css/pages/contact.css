@@ -4,7 +4,7 @@
 
 /* ---------- Hero ---------- */
 .page-hero--contact {
-  background-image: url('../../assets/images/hero/donation-hero-village.webp');
+  background-image: url('../../assets/images/hero/Smiles-village.webp');
 }
 
 /* ---------- Reach out and connect ---------- */
@@ -132,7 +132,7 @@
 .inquiry__image-layer {
   position: absolute;
   inset: 0 -10%;
-  background: url('../../assets/images/about/mother-baby-on-back.webp') center / cover no-repeat;
+  background: url('../../assets/images/about/portrait-male-friends-sharing-affectionate-moment-friendship.webp') center / cover no-repeat;
 }
 
 .inquiry__content {
