@@ -1,12 +1,11 @@
 import { config } from '../config.js';
 import { formatCurrency } from '../core/format.js';
+import { isValidEmail } from '../core/validation.js';
 import { startCheckout, isPaymentAvailable, PaymentUnavailableError } from './payment-gateway.js';
 
 const { currency, minAmount, maxAmount } = config.donations;
 
-const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const NAME_MAX_LENGTH = 50;
-const EMAIL_MAX_LENGTH = 254;
 
 export const FREQUENCY_LABELS = { once: 'One time' };
 
@@ -53,9 +52,7 @@ export function validateDonor({ firstName = '', lastName = '', email = '' }) {
   if (last.length > NAME_MAX_LENGTH) errors.lastName = `Please use ${NAME_MAX_LENGTH} characters or fewer.`;
 
   if (!mail) errors.email = 'Please enter your email address.';
-  else if (mail.length > EMAIL_MAX_LENGTH || !EMAIL_PATTERN.test(mail)) {
-    errors.email = 'Please enter a valid email address, like name@example.com.';
-  }
+  else if (!isValidEmail(mail)) errors.email = 'Please enter a valid email address, like name@example.com.';
   return errors;
 }
 

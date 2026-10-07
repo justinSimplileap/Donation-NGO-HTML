@@ -18,6 +18,10 @@ export const config = {
     maxAmount: 100000,
     contactEmail: 'donation@refugeehelp.com',
   },
+  /** Contact form fallback address, offered when messages can't be sent online. */
+  contact: {
+    email: 'contact@refugeehelp.org',
+  },
   /**
    * Online payments. `provider` names an adapter registered in js/services/payment-gateway.js.
    * Keep secret keys on the server – only publishable identifiers may ever be placed here.
