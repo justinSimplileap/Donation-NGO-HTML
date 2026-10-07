@@ -7,15 +7,20 @@ const MAX_SHIFT_Y = 160;
  * Scroll-linked parallax.
  *  - data-parallax="0.08"   vertical shift relative to the viewport centre (negative = opposite direction)
  *  - data-parallax-x="60"   horizontal shift range in px while the element crosses the viewport
+ *  - data-parallax-bg="main" background layer (200% of its parent's height) that drifts down by one
+ *                           parent height while the element matched by the selector (default: the
+ *                           parent) crosses the viewport. A tall progress element gives a gentle drift.
  * Positions are measured on the parent so the transform never feeds back into the measurement.
  * Disabled on tablet/mobile layouts and when the user prefers reduced motion.
  */
 export function initParallax(scope = document) {
-  const items = qsa('[data-parallax], [data-parallax-x]', scope).map((el) => ({
+  const items = qsa('[data-parallax], [data-parallax-x], [data-parallax-bg]', scope).map((el) => ({
     el,
     anchor: el.parentElement,
     factorY: Number(el.dataset.parallax) || 0,
     rangeX: Number(el.dataset.parallaxX) || 0,
+    isBackground: el.hasAttribute('data-parallax-bg'),
+    progressEl: (el.dataset.parallaxBg && el.closest(el.dataset.parallaxBg)) || el.parentElement,
     visible: false,
   }));
   if (items.length === 0) return;
@@ -29,7 +34,11 @@ export function initParallax(scope = document) {
       const rect = item.anchor.getBoundingClientRect();
       let x = 0;
       let y = 0;
-      if (item.factorY) {
+      if (item.isBackground) {
+        const range = item.progressEl === item.anchor ? rect : item.progressEl.getBoundingClientRect();
+        const progress = Math.min(1, Math.max(0, (viewportHeight - range.top) / (viewportHeight + range.height)));
+        y = -rect.height * (1 - progress);
+      } else if (item.factorY) {
         const raw = (rect.top + rect.height / 2 - viewportHeight / 2) * item.factorY;
         y = Math.max(-MAX_SHIFT_Y, Math.min(MAX_SHIFT_Y, raw));
       }

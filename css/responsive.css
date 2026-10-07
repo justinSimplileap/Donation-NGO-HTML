@@ -347,6 +347,10 @@
     padding-bottom: 0;
   }
 
+  .donate-approach__bg {
+    display: none;
+  }
+
   .spotlight__content {
     align-items: center;
     padding: 80px 40px 0;
@@ -498,8 +502,7 @@
   .testimonials__col--down,
   .testimonials__col--up {
     gap: 40px;
-    margin-top: 0;
-    padding-top: 0;
+    translate: none;
   }
 
   .testimonials__col--up {

@@ -256,11 +256,27 @@
 }
 
 .cta-banner__box {
+  position: relative;
   display: flex;
   align-items: center;
   min-height: 600px;
+  overflow: hidden;
+  isolation: isolate;
   border-radius: var(--radius-md);
+  background-color: var(--color-heading);
+}
+
+.cta-banner__box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: linear-gradient(90deg, var(--color-heading) 0%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+}
+
+.cta-banner .bg-video {
+  z-index: -2;
 }
 
 .cta-banner__content {
@@ -309,6 +325,21 @@
 
 .donate-approach {
   padding-bottom: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.donate-approach__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 200%;
+  background: url('../../assets/images/about/mother-baby-on-back.webp') 0 42% / 40% auto no-repeat;
+  pointer-events: none;
+  transition: transform 1s cubic-bezier(0, 0.33, 0.07, 1.03);
+  will-change: transform;
 }
 
 .donate-panel {
@@ -702,7 +733,6 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 80px;
-  height: 705px;
   padding: 0 80px;
 }
 
@@ -726,8 +756,8 @@
 
 .testimonials__gallery {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 250px));
-  justify-content: space-between;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 80px;
 }
 
@@ -739,11 +769,11 @@
 }
 
 .testimonials__col--down {
-  padding-top: 150px;
+  translate: 0 150px;
 }
 
 .testimonials__col--up {
-  margin-top: -150px;
+  translate: 0 -150px;
 }
 
 .testimonials__img {
@@ -786,6 +816,13 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+@media (min-width: 1025px) {
+  .news__sidebar {
+    position: sticky;
+    top: 40px;
+  }
 }
 
 .sidebar-widget__title {

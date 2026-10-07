@@ -5,6 +5,7 @@ import { initReveal } from './components/reveal.js';
 import { initParallax } from './components/parallax.js';
 import { initMouseTrack } from './components/mouse-track.js';
 import { initAccordions } from './components/accordion.js';
+import { initBackgroundVideos } from './components/background-video.js';
 import { initNewsletters } from './components/newsletter.js';
 import { renderPostLists } from './components/post-list.js';
 
@@ -16,5 +17,6 @@ initReveal();
 initParallax();
 initMouseTrack();
 initAccordions();
+initBackgroundVideos();
 initNewsletters();
 renderPostLists();
