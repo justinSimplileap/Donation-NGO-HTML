@@ -10,6 +10,7 @@ export const config = {
   localDataUrl: new URL('../data/', import.meta.url),
   routes: {
     blogSingle: 'blog-single.html',
+    eventSingle: 'event-single.html',
     donate: 'donate.html',
   },
   donations: {

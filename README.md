@@ -2,7 +2,7 @@
 
 A static, multi-page charity/NGO website built with plain HTML5, CSS3 and vanilla JavaScript (ES modules). There are no frameworks, build tools or runtime dependencies.
 
-Implemented pages: Home (`index.html`), Donate (`donate.html`), About (`about.html`), Contact (`contact.html`), Blog listing (`blogs.html`) and Blog single (`blog-single.html`). Gallery and Events already have links and routes in place, but those pages haven't been built yet.
+Implemented pages: Home (`index.html`), Donate (`donate.html`), About (`about.html`), Contact (`contact.html`), Blog listing (`blogs.html`), Blog single (`blog-single.html`), Events (`events.html`), Event single (`event-single.html`) and Gallery (`gallery.html`).
 
 ## Running locally
 
@@ -23,6 +23,9 @@ about.html              About page
 contact.html            Contact page (frontend validation only, no backend)
 blogs.html              Blog listing (supports ?search= and ?author=)
 blog-single.html        Blog post (?slug=, defaults to the latest post)
+events.html             Events listing (?category= filters)
+event-single.html       Event detail (?slug=, defaults to the latest event)
+gallery.html            Photo gallery (?category= filters and lightbox)
 assets/
   fonts/                Self-hosted Jost and Yantramanav (woff2)
   icons/                SVG sprite and favicon
@@ -38,6 +41,8 @@ css/
   responsive.css        Breakpoint overrides (1280 / 1024 / 767 / 480 / 360)
 data/
   blogs.json            Blog posts (with structured body content) and authors
+  events.json           Community events and fundraisers
+  gallery.json          Gallery images and categories
   causes.json           Causes / fundraising campaigns
 js/
   config.js             Data source (local JSON or remote API) and routes

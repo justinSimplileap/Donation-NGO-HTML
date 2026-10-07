@@ -27,6 +27,18 @@ export const formatDate = (isoDate, locale = 'en-US') =>
 export const formatTime = (isoDateTime, locale = 'en-US') =>
   new Intl.DateTimeFormat(locale, { hour: 'numeric', minute: '2-digit' }).format(new Date(isoDateTime)).toLowerCase();
 
+const dateParts = (isoDate, options, locale = 'en-US') =>
+  new Intl.DateTimeFormat(locale, {
+    ...options,
+    ...(isDateOnly(isoDate) && { timeZone: 'UTC' }),
+  }).formatToParts(new Date(isoDate));
+
+export const formatEventDay = (isoDate, locale = 'en-US') =>
+  dateParts(isoDate, { day: 'numeric' }, locale).find((part) => part.type === 'day')?.value ?? '';
+
+export const formatEventMonth = (isoDate, locale = 'en-US') =>
+  dateParts(isoDate, { month: 'short' }, locale).find((part) => part.type === 'month')?.value ?? '';
+
 export const formatCurrency = (amount, currency = 'USD', locale = 'en-US', fractionDigits = 2) =>
   new Intl.NumberFormat(locale, {
     style: 'currency',

@@ -4,6 +4,8 @@ import { config } from '../config.js';
 const LOCAL_RESOURCES = {
   posts: 'blogs.json',
   causes: 'causes.json',
+  events: 'events.json',
+  gallery: 'gallery.json',
 };
 
 const cache = new Map();
