@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('../assets/fonts/jost-latin-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Jost';
+  font-style: italic;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('../assets/fonts/jost-latin-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../assets/fonts/yantramanav-latin-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Yantramanav';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../assets/fonts/yantramanav-latin-500.woff2') format('woff2');
+}
+
+:root {
+  /* Brand colours */
+  --color-primary: #f24a29;
+  --color-secondary: #f2a922;
+  --color-accent: #22b6af;
+  --color-info: #2272b6;
+
+  /* Neutrals */
+  --color-heading: #282828;
+  --color-text: #505260;
+  --color-muted: #5c5c5c;
+  --color-light-text: #d4d4d4;
+  --color-white: #ffffff;
+  --color-surface: #fafafa;
+  --color-border: #efeded;
+  --color-border-dark: rgba(0, 0, 0, 0.2);
+  --color-progress-track: #d9dfdb;
+  --color-overlay-dark: rgba(0, 0, 0, 0.8);
+
+  /* Typography */
+  --font-primary: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: 'Yantramanav', 'Helvetica Neue', Arial, sans-serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --fs-display: 144px;
+  --fs-h1: 64px;
+  --fs-h2: 48px;
+  --fs-h3: 40px;
+  --fs-h4: 32px;
+  --fs-h5: 24px;
+  --fs-h6: 21px;
+  --fs-lead: 20.8px;
+  --fs-base: 16px;
+  --fs-small: 14.4px;
+  --fs-xsmall: 12.8px;
+
+  --lh-tight: 1;
+  --lh-heading: 1.1;
+  --lh-title: 1.2;
+  --lh-base: 1.5;
+
+  --ls-button: 1px;
+
+  /* Layout */
+  --container-max: 1350px;
+  --container-gutter: 20px;
+  --container-narrow: 675px;
+  --header-height: 81px;
+  --topbar-height: 37px;
+
+  /* Spacing scale */
+  --space-2xs: 5px;
+  --space-xs: 10px;
+  --space-sm: 15px;
+  --space-md: 20px;
+  --space-lg: 30px;
+  --space-xl: 40px;
+  --space-2xl: 60px;
+  --space-3xl: 80px;
+  --space-section: 120px;
+
+  /* Radii */
+  --radius-sm: 2px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
+  --radius-round: 50%;
+
+  /* Shadows */
+  --shadow-card: 0 0 15px rgba(0, 0, 0, 0.1);
+  --shadow-dropdown: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-modal: 2px 8px 23px 3px rgba(0, 0, 0, 0.2);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 0.2s;
+  --duration-base: 0.3s;
+  --duration-slow: 0.6s;
+  --transition-base: all var(--duration-base) var(--ease-standard);
+
+  /* Layers */
+  --z-dropdown: 1000;
+  --z-header: 900;
+  --z-drawer: 2000;
+}

@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Scroll reveal (only hidden when JS is available)
+   ========================================================================== */
+.js [data-reveal] {
+  opacity: 0;
+  transition: opacity 1s var(--ease-standard), transform 1s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.js [data-reveal='fade-up'] {
+  transform: translate3d(0, 40px, 0);
+}
+
+.js [data-reveal='fade-left'] {
+  transform: translate3d(40px, 0, 0);
+}
+
+.js [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero-slider__slide img {
+  transform: scale(1);
+  transition: transform 20s linear;
+}
+
+.hero-slider__slide.is-active img {
+  transform: scale(1.3);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translate3d(0, 30px, 0); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==========================================================================
+   Reduced motion
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-slider__slide.is-active img {
+    transform: none;
+  }
+
+  [data-parallax],
+  [data-parallax-x] {
+    transform: none !important;
+  }
+}

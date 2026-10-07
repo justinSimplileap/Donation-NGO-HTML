@@ -1,0 +1,94 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "slug": "make-an-impact",
+      "title": "Make an Impact",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "publishedAt": "2025-01-31",
+      "author": "Charity Team",
+      "category": "Clean Water",
+      "image": {
+        "src": "assets/images/about/boy-drinking-water.webp",
+        "alt": "Smiling boy drinking water from an outdoor tap",
+        "width": 1024,
+        "height": 683
+      }
+    },
+    {
+      "id": 2,
+      "slug": "join-the-cause",
+      "title": "Join the Cause",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "publishedAt": "2025-01-31",
+      "author": "Charity Team",
+      "category": "Education",
+      "image": {
+        "src": "assets/images/about/girl-with-paper.webp",
+        "alt": "Little girl in a colourful dress holding a sheet of paper",
+        "width": 1200,
+        "height": 803
+      }
+    },
+    {
+      "id": 3,
+      "slug": "together-we-can",
+      "title": "Together We Can",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "publishedAt": "2025-01-31",
+      "author": "Charity Team",
+      "category": "Community",
+      "image": {
+        "src": "assets/images/about/girl-red-hoodie.webp",
+        "alt": "Young girl in a red top standing on a dusty village path",
+        "width": 1024,
+        "height": 683
+      }
+    },
+    {
+      "id": 4,
+      "slug": "give-hope-today",
+      "title": "Give Hope Today",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "publishedAt": "2025-01-31",
+      "author": "Charity Team",
+      "category": "Donations",
+      "image": {
+        "src": "assets/images/misc/bg-hands-holding-heart.webp",
+        "alt": "Cupped hands holding a small white heart-shaped stone",
+        "width": 1600,
+        "height": 1068
+      }
+    },
+    {
+      "id": 5,
+      "slug": "be-the-change",
+      "title": "Be the Change",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "publishedAt": "2025-01-31",
+      "author": "Charity Team",
+      "category": "Children",
+      "image": {
+        "src": "assets/images/about/girl-smiling-portrait.webp",
+        "alt": "Close-up portrait of a smiling girl",
+        "width": 1024,
+        "height": 685
+      }
+    },
+    {
+      "id": 6,
+      "slug": "your-help-matters",
+      "title": "Your Help Matters",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "publishedAt": "2025-01-31",
+      "author": "Charity Team",
+      "category": "Health",
+      "image": {
+        "src": "assets/images/about/mother-washing-child.webp",
+        "alt": "Girl washing a small child in a blue basin outdoors",
+        "width": 1200,
+        "height": 800
+      }
+    }
+  ]
+}

@@ -1,0 +1,883 @@
+/* ==========================================================================
+   Responsive overrides
+   Breakpoints: laptop ≤1280px · tablet ≤1024px · mobile ≤767px · small ≤480px · xs ≤360px
+   ========================================================================== */
+
+/* ---------- Laptop (≤1280px) ---------- */
+@media (max-width: 1280px) {
+  .navbar__brand {
+    flex-basis: 240px;
+  }
+
+  .primary-nav__link {
+    padding: 0 14px;
+  }
+
+  .primary-nav__caret {
+    padding-right: 14px;
+  }
+
+  .navbar__contact {
+    padding-left: 30px;
+  }
+
+  .hero__media {
+    width: 58%;
+  }
+
+  .hero__title {
+    font-size: 128px;
+  }
+
+  .impact-intro__grid {
+    column-gap: 30px;
+  }
+
+  .impact-intro__content {
+    padding-left: 10px;
+  }
+
+  .donate-panel {
+    padding: 60px;
+  }
+
+  .spotlight__content {
+    padding-left: 60px;
+  }
+
+  .spotlight__gallery {
+    padding-right: 60px;
+  }
+
+  .timeline__step {
+    padding-inline: 24px;
+  }
+
+  .approach-table {
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .testimonials__inner {
+    padding: 0 60px;
+    gap: 60px;
+  }
+
+  .testimonial-slider .slider__viewport {
+    margin: 0 60px;
+  }
+
+  .testimonials__gallery {
+    gap: 40px;
+  }
+
+  .testimonials__col {
+    gap: 40px;
+  }
+}
+
+/* ---------- Tablet (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  :root {
+    --space-section: 100px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .section-heading {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Header */
+  .topbar {
+    display: none;
+  }
+
+  .navbar {
+    gap: 0;
+    min-height: 80px;
+  }
+
+  .navbar__brand {
+    flex-basis: 258px;
+    padding: 20px;
+  }
+
+  .navbar__menu {
+    position: static;
+    padding: 10px 20px;
+  }
+
+  .navbar__contact {
+    padding: 0 20px 0 30px;
+    border-left: 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .primary-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: var(--z-dropdown);
+    max-height: calc(100vh - 80px);
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background-color: var(--color-heading);
+    box-shadow: var(--shadow-dropdown);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: opacity var(--duration-base) ease, transform var(--duration-base) var(--ease-out),
+      visibility 0s linear var(--duration-base);
+  }
+
+  .primary-nav.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: opacity var(--duration-base) ease, transform var(--duration-base) var(--ease-out), visibility 0s;
+  }
+
+  .primary-nav__list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .primary-nav__item {
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .primary-nav__link,
+  .has-dropdown > .primary-nav__link {
+    flex: 1 1 auto;
+    padding: 15px 20px;
+    color: var(--color-white);
+  }
+
+  .primary-nav__caret {
+    align-self: stretch;
+    margin: 0;
+    padding: 0 20px;
+    color: var(--color-white);
+  }
+
+  .primary-nav__item:hover > .primary-nav__caret {
+    color: var(--color-secondary);
+  }
+
+  .has-dropdown.is-open > .primary-nav__caret .icon {
+    transform: rotate(180deg);
+  }
+
+  .primary-nav__caret .icon {
+    transition: transform var(--duration-base) ease;
+  }
+
+  .primary-nav__link:hover,
+  .primary-nav__link[aria-current='page'] {
+    color: var(--color-secondary);
+  }
+
+  .dropdown,
+  .has-dropdown:hover > .dropdown,
+  .has-dropdown:focus-within > .dropdown {
+    position: static;
+    display: none;
+    flex: 0 0 100%;
+    min-width: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: none;
+    font-size: var(--fs-base);
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: none;
+  }
+
+  .has-dropdown.is-open > .dropdown {
+    display: block;
+  }
+
+  .dropdown::before {
+    display: none;
+  }
+
+  .dropdown__link {
+    padding: 12px 20px 12px 36px;
+  }
+
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero__band {
+    top: 0;
+    height: 100%;
+  }
+
+  .hero__inner {
+    z-index: 1;
+    order: -1;
+    height: auto;
+  }
+
+  .hero__content {
+    position: relative;
+    top: auto;
+    align-items: center;
+    padding: 40px 0 0;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 112px;
+    line-height: 1;
+  }
+
+  .hero__title--outline {
+    display: none;
+  }
+
+  .hero__text {
+    max-width: 680px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
+
+  .hero__btn {
+    margin-top: 40px;
+  }
+
+  .hero__media {
+    position: relative;
+    width: 100%;
+    height: 460px;
+  }
+
+  /* Ticker */
+  .ticker__list {
+    gap: 20px;
+  }
+
+  .ticker__item {
+    gap: 12px;
+    font-size: 26px;
+  }
+
+  /* Impact intro */
+  .impact-intro__grid {
+    grid-template-columns: minmax(0, 1fr) 200px;
+    grid-template-areas:
+      'media stats'
+      'content content';
+    row-gap: 80px;
+    min-height: 0;
+  }
+
+  .impact-intro__media {
+    grid-area: media;
+    min-height: 600px;
+  }
+
+  .impact-intro__stats {
+    grid-area: stats;
+  }
+
+  .impact-intro__content {
+    grid-area: content;
+    padding-left: 0;
+  }
+
+  /* CTA banner */
+  .cta-banner__box {
+    min-height: 0;
+  }
+
+  .cta-banner__content {
+    width: 70%;
+    padding: 80px 50px;
+  }
+
+  .cta-banner__title {
+    font-size: 34px;
+  }
+
+  /* Donate + approach */
+  .donate-approach__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 60px;
+  }
+
+  .donate-panel {
+    padding: 60px 80px;
+  }
+
+  .donate-panel__title {
+    font-size: 34px;
+  }
+
+  .approach__title {
+    text-align: center;
+  }
+
+  /* Spotlight */
+  .spotlight {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .donate-approach {
+    padding-bottom: 0;
+  }
+
+  .spotlight__content {
+    align-items: center;
+    padding: 80px 40px 0;
+    text-align: center;
+  }
+
+  .spotlight__gallery {
+    padding: 0 20px 40px;
+  }
+
+  .spotlight__col,
+  .spotlight__col--offset {
+    padding-top: 0;
+  }
+
+  .spotlight__img--square {
+    width: 100%;
+  }
+
+  .spotlight__img--tall {
+    height: 100%;
+    min-height: 400px;
+  }
+
+  /* Timeline */
+  .timeline__row,
+  .timeline__row--bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0;
+  }
+
+  .timeline__media,
+  .timeline__media--top,
+  .timeline__media--bottom {
+    width: min(365px, 100%);
+    height: 290px;
+    padding: 0;
+  }
+
+  .timeline__step,
+  .timeline__step--top,
+  .timeline__step--bottom {
+    gap: 15px;
+    margin: 0;
+    padding: 40px 0 60px;
+  }
+
+  .timeline__step::after,
+  .timeline__number {
+    display: none;
+  }
+
+  .timeline__row--bottom .timeline__step--bottom:first-child {
+    padding-top: 0;
+  }
+
+  /* Cause showcase */
+  .approach-table {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  .approach-table::before {
+    display: none;
+  }
+
+  .approach-table-wrap {
+    background: none;
+  }
+
+  .cause-showcase__featured {
+    padding-block: 60px 0;
+  }
+
+  .values-strip {
+    width: 100%;
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .values-strip::after {
+    display: none;
+  }
+
+  .values-strip-wrap {
+    padding-top: 0;
+    background: var(--color-white);
+  }
+
+  /* Giving */
+  .giving__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 60px;
+  }
+
+  .giving__col--left {
+    padding-top: 0;
+  }
+
+  .giving__figure {
+    width: min(500px, 100%);
+    height: 520px;
+    margin-inline: auto;
+  }
+
+  .feature {
+    text-align: center;
+  }
+
+  .feature__img {
+    margin-inline: auto;
+  }
+
+  .giving__intro {
+    min-height: 400px;
+  }
+
+  /* Testimonials */
+  .testimonials__inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    height: auto;
+    padding: 0 20px 120px;
+  }
+
+  .testimonials__slider-col {
+    padding-block: 100px 60px;
+  }
+
+  .testimonial-slider .slider__viewport {
+    margin: 0 60px;
+  }
+
+  .testimonial__text {
+    font-size: 36px;
+  }
+
+  .testimonials__gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    padding-inline: 20px;
+  }
+
+  .testimonials__col,
+  .testimonials__col--down,
+  .testimonials__col--up {
+    gap: 40px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .testimonials__col--up {
+    flex-direction: column;
+  }
+
+  /* News */
+  .news__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .news__grid {
+    gap: 20px;
+  }
+
+  .sidebar-widget .post-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 20px;
+  }
+
+  .flip-card {
+    min-height: 350px;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding-top: 140px;
+  }
+
+  .site-footer__edge {
+    height: 60px;
+  }
+
+  .site-footer__top {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .site-footer__columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px 20px;
+    text-align: center;
+  }
+
+  .footer-col .link-list,
+  .footer-col .post-list {
+    justify-items: center;
+  }
+
+  .footer-col .post-item {
+    max-width: 330px;
+    text-align: left;
+  }
+
+  .footer-col .contact-chip {
+    justify-content: center;
+  }
+
+  .site-footer__bottom {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .site-footer .social-links {
+    justify-content: center;
+  }
+}
+
+/* ---------- Mobile (≤767px) ---------- */
+@media (max-width: 767px) {
+  :root {
+    --space-section: 80px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section--inset {
+    margin-inline: 0;
+  }
+
+  /* Header */
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar__brand {
+    flex: 0 0 100%;
+    justify-content: center;
+    min-height: 78px;
+  }
+
+  .navbar__menu {
+    flex: 1 1 100%;
+    padding: 12px 20px;
+  }
+
+  .navbar__contact {
+    display: none;
+  }
+
+  .primary-nav {
+    max-height: calc(100vh - 135px);
+    max-height: calc(100dvh - 135px);
+  }
+
+  /* Hero */
+  .hero__content {
+    padding: 50px 0;
+  }
+
+  .hero__title {
+    font-size: 80px;
+  }
+
+  .hero__text,
+  .hero__btn {
+    display: none;
+  }
+
+  .hero__media {
+    height: 375px;
+  }
+
+  /* Ticker */
+  .ticker {
+    display: none;
+  }
+
+  /* Impact intro */
+  .impact-intro__grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'media'
+      'stats'
+      'content';
+    row-gap: 60px;
+  }
+
+  .impact-intro__media {
+    min-height: 460px;
+  }
+
+  .impact-intro__photo {
+    width: 85%;
+  }
+
+  .quote-card {
+    left: 15%;
+    right: 0;
+    width: auto;
+    max-width: none;
+    padding: 30px 20px 24px;
+  }
+
+  .impact-intro__stats {
+    gap: 40px;
+  }
+
+  .impact-intro__thumb {
+    height: 420px;
+  }
+
+  /* CTA banner */
+  .cta-banner__content {
+    width: 100%;
+    align-items: center;
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .cta-banner__title {
+    font-size: 32px;
+  }
+
+  /* Donate + approach */
+  .donate-panel {
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .donate-panel__title {
+    font-size: 30px;
+  }
+
+  .approach {
+    gap: 40px;
+  }
+
+  .accordion__summary {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  /* Spotlight */
+  .spotlight__content {
+    padding: 60px 20px 0;
+  }
+
+  .spotlight__gallery {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0 20px 40px;
+  }
+
+  .spotlight__img--tall {
+    height: 420px;
+    min-height: 0;
+  }
+
+  /* Timeline */
+  .timeline__media,
+  .timeline__media--top,
+  .timeline__media--bottom {
+    width: 100%;
+  }
+
+  /* Cause showcase */
+  .approach-table {
+    padding: 50px 20px;
+  }
+
+  .approach-table__row {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 12px;
+    padding: 20px 0;
+  }
+
+  .approach-table__row .btn--paypal {
+    justify-self: center;
+  }
+
+  .cause-showcase__featured .cause-card {
+    min-height: 0;
+  }
+
+  .values-strip {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 50px;
+    padding: 60px 20px;
+  }
+
+  /* Giving */
+  .giving__features {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .giving__figure {
+    height: 340px;
+  }
+
+  .giving__intro {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+  }
+
+  .vertical-card {
+    display: none;
+  }
+
+  /* Testimonials */
+  .testimonials__inner {
+    padding: 0 20px 80px;
+  }
+
+  .testimonials__slider-col {
+    padding-block: 80px 40px;
+  }
+
+  .testimonial-slider .slider__viewport {
+    margin: 0 40px;
+  }
+
+  .testimonial__text {
+    font-size: 32px;
+  }
+
+  .testimonials__gallery {
+    grid-template-columns: minmax(0, 1fr);
+    padding-inline: 0;
+  }
+
+  /* News */
+  .news__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sidebar-widget .post-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* Footer */
+  .site-footer {
+    padding-top: 110px;
+  }
+
+  .site-footer__edge {
+    height: 40px;
+  }
+
+  .site-footer__title {
+    font-size: 44px;
+  }
+
+  .site-footer__columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .newsletter__submit {
+    flex-basis: 110px;
+  }
+}
+
+/* ---------- Small phones (≤480px) ---------- */
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 72px;
+  }
+
+  .hero__media {
+    height: 320px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .impact-intro__media {
+    min-height: 420px;
+  }
+
+  .blog-card {
+    min-height: 380px;
+    padding: 30px 24px;
+  }
+
+  .cause-card {
+    flex-direction: column;
+  }
+
+  .cause-card__media {
+    flex-basis: auto;
+    height: 240px;
+  }
+
+  .flip-card {
+    min-height: 320px;
+  }
+}
+
+/* ---------- Extra small (≤360px) ---------- */
+@media (max-width: 360px) {
+  .hero__title {
+    font-size: 60px;
+  }
+
+  .navbar__brand img {
+    width: 160px;
+  }
+
+  .testimonial-slider .slider__viewport {
+    margin: 0 32px;
+  }
+
+  .testimonial__text {
+    font-size: 28px;
+  }
+
+  .donation-widget__body {
+    padding-inline: 16px;
+  }
+
+  .site-footer__title {
+    font-size: 38px;
+  }
+}

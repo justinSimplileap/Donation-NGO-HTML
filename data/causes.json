@@ -1,0 +1,21 @@
+{
+  "causes": [
+    {
+      "id": 1,
+      "slug": "stronger-together",
+      "title": "Stronger Together",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut diam accumsan, consequat elit quis, laoreet…",
+      "goal": 1000,
+      "raised": 750,
+      "donations": 2,
+      "currency": "USD",
+      "featured": true,
+      "image": {
+        "src": "assets/images/causes/girl-drinking-tap-water.webp",
+        "alt": "Girl drinking water from a tap mounted on a brick pillar",
+        "width": 1200,
+        "height": 800
+      }
+    }
+  ]
+}
