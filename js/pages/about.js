@@ -1,7 +1,6 @@
 import { qs } from '../core/dom.js';
 import { animateProgressBars } from '../components/progress-bar.js';
-import { getPosts } from '../services/blog-service.js';
-import { postUrl } from '../templates/blog-card.js';
+import { apiClient } from '../services/api-client.js';
 import { imageTileTemplate } from '../templates/image-tile.js';
 
 async function renderStoryGrid() {
@@ -9,10 +8,10 @@ async function renderStoryGrid() {
   if (!grid) return;
 
   try {
-    const posts = await getPosts({ limit: Number(grid.dataset.limit) || 6, order: 'desc' });
-    grid.innerHTML = posts
-      .map((post) => imageTileTemplate({ href: postUrl(post), title: post.title, image: post.image }))
-      .join('');
+    const { stories = [] } = await apiClient.get('aboutStories');
+    grid.innerHTML = stories.length
+      ? stories.map((story) => imageTileTemplate(story)).join('')
+      : '<li class="data-placeholder">Stories could not be loaded right now.</li>';
   } catch (error) {
     grid.innerHTML = '<li class="data-placeholder">Stories could not be loaded right now.</li>';
     console.warn('[about] Could not load stories.', error);

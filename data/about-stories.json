@@ -1,0 +1,64 @@
+{
+  "stories": [
+    {
+      "title": "Kindness Matters",
+      "href": "gallery.html",
+      "image": {
+        "src": "assets/images/about/stories/kindness-matters.webp",
+        "alt": "Indian children sitting together in front of a brick wall at a community gathering",
+        "width": 900,
+        "height": 900
+      }
+    },
+    {
+      "title": "Spread Compassion",
+      "href": "gallery.html?category=community",
+      "image": {
+        "src": "assets/images/about/stories/spread-compassion.webp",
+        "alt": "A smiling Indian girl in traditional dress with other children nearby",
+        "width": 900,
+        "height": 900
+      }
+    },
+    {
+      "title": "Hope Begins Here",
+      "href": "blogs.html",
+      "image": {
+        "src": "assets/images/about/stories/hope-begins-here.webp",
+        "alt": "Portrait of Indian schoolchildren with hopeful expressions",
+        "width": 900,
+        "height": 900
+      }
+    },
+    {
+      "title": "Walking Together",
+      "href": "events.html",
+      "image": {
+        "src": "assets/images/about/stories/walking-together.webp",
+        "alt": "Indian girls reading together on the floor in a humble learning space",
+        "width": 900,
+        "height": 900
+      }
+    },
+    {
+      "title": "Every Act Counts",
+      "href": "donate.html",
+      "image": {
+        "src": "assets/images/about/stories/school-children-dressed-uniform-have-fun-play-schoolyard.webp",
+        "alt": "Young Indian students learning together in a classroom setting",
+        "width": 900,
+        "height": 900
+      }
+    },
+    {
+      "title": "Light for Others",
+      "href": "contact.html",
+      "image": {
+        "src": "assets/images/about/stories/light-for-others.webp",
+        "alt": "An Indian mother holding her child with warmth and care in a community setting",
+        "width": 900,
+        "height": 900
+      }
+    }
+  ]
+}
