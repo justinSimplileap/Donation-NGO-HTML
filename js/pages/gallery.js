@@ -37,7 +37,11 @@ function initGalleryPage() {
     grid.innerHTML = items.length
       ? items.map((item, index) => galleryItemTemplate(item, index)).join('')
       : '<li class="gallery-grid__empty data-placeholder">No images in this category yet. <a href="gallery.html">View all photos</a>.</li>';
-    initGalleryLightbox(items, grid.parentElement ?? document);
+    try {
+      initGalleryLightbox(items, grid.parentElement ?? document);
+    } catch (error) {
+      console.warn('[gallery] Lightbox could not be initialized.', error);
+    }
   };
 
   const updateStatus = () => {
@@ -62,7 +66,11 @@ function initGalleryPage() {
       updateStatus();
     })
     .catch((error) => {
-      grid.innerHTML = '<li class="data-placeholder">Gallery could not be loaded right now.</li>';
+      const hint =
+        window.location.protocol === 'file:'
+          ? ' Open this site through a local server (for example <code>python3 -m http.server 8000</code>) instead of the file:// URL.'
+          : ' Try a hard refresh. If it continues, check that <code>data/gallery.json</code> is reachable.';
+      grid.innerHTML = `<li class="data-placeholder">Gallery could not be loaded right now.${hint}</li>`;
       console.warn('[gallery] Could not load gallery.', error);
     });
 }

@@ -36,9 +36,13 @@ export const apiClient = {
         return response.json();
       });
       cache.set(url, request);
-      request.catch(() => cache.delete(url));
     }
-    return cache.get(url);
+    try {
+      return await cache.get(url);
+    } catch (error) {
+      cache.delete(url);
+      throw error;
+    }
   },
 
   async post(resource, body) {
