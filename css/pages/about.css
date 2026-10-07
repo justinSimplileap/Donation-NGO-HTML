@@ -4,7 +4,7 @@
 
 /* ---------- Hero ---------- */
 .page-hero--about {
-  background-image: url('../../assets/images/hero/about-hero-heart-hands.webp');
+  background-image: url('../../assets/images/hero/about-banner.webp');
 }
 
 /* ---------- Our journey of impact ---------- */
@@ -198,7 +198,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 40px;
-  padding: 80px;
+  padding: 40px;
   isolation: isolate;
   color: var(--color-white);
   background-color: var(--color-accent);
@@ -454,3 +454,17 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+  .spotlight-values {
+    list-style: disc;
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .spotlight-values li {
+    margin-bottom: 0.5rem;
+  }
+  .spotlight-values strong {
+    font-weight: 700;
+  }
