@@ -10,6 +10,7 @@ body {
   color: var(--color-muted);
   background-color: var(--color-white);
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 h1,

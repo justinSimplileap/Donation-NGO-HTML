@@ -1186,3 +1186,31 @@
 .data-placeholder {
   color: var(--color-text);
 }
+
+/* ==========================================================================
+   Background video (YouTube, cover-fit, decorative)
+   ========================================================================== */
+.bg-video {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  container-type: size;
+  background: var(--bg-video-poster, none) center / cover no-repeat;
+  pointer-events: none;
+}
+
+.bg-video__frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(100cqw, 177.78cqh);
+  height: max(100cqh, 56.25cqw);
+  border: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.15);
+  transition: opacity 1s var(--ease-standard);
+}
+
+.bg-video.is-playing .bg-video__frame {
+  opacity: 1;
+}
